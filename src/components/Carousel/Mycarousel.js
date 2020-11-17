@@ -4,11 +4,17 @@ import Carousel from "react-bootstrap/Carousel";
 import CaroImage1 from "../../assets/img/profile/aa_headshot_2.jpg";
 import CaroImage2 from "../../assets/img/profile/aa_headshot_3.jpg";
 import CaroImage3 from "../../assets/img/profile/aa_actionshot_1.jpg";
+import Scrolldown from "../Scrolldown/Scrolldown";
 
 const Mycarousel = () => {
   return (
     <div id="home">
-      <Carousel controls={false} indicators interval={2500} pauseOnHover={true}>
+      <Carousel
+        controls={false}
+        indicators
+        interval={2500}
+        pauseOnHover={false}
+      >
         <Carousel.Item>
           <img
             className="d-block w-100 custom-img"
@@ -45,6 +51,7 @@ const Mycarousel = () => {
           </Carousel.Caption> */}
         </Carousel.Item>
       </Carousel>
+      <Scrolldown />
     </div>
   );
 };
