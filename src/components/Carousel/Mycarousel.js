@@ -1,0 +1,52 @@
+import React from "react";
+import "./CarouselStyles.css";
+import Carousel from "react-bootstrap/Carousel";
+import CaroImage1 from "../../assets/img/profile/aa_headshot_2.jpg";
+import CaroImage2 from "../../assets/img/profile/aa_headshot_3.jpg";
+import CaroImage3 from "../../assets/img/profile/aa_actionshot_1.jpg";
+
+const Mycarousel = () => {
+  return (
+    <div id="home">
+      <Carousel controls={false} indicators interval={2500} pauseOnHover={true}>
+        <Carousel.Item>
+          <img
+            className="d-block w-100 custom-img"
+            src={CaroImage1}
+            alt="First slide"
+          />
+          {/* <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption> */}
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100 custom-img"
+            src={CaroImage2}
+            alt="Second slide"
+          />
+          {/* <Carousel.Caption>
+            <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Carousel.Caption> */}
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100 custom-img"
+            src={CaroImage3}
+            alt="Third slide"
+          />
+          {/* <Carousel.Caption>
+            <h3>Third slide label</h3>
+            <p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            </p>
+          </Carousel.Caption> */}
+        </Carousel.Item>
+      </Carousel>
+    </div>
+  );
+};
+
+export default Mycarousel;

@@ -3,7 +3,7 @@
   }
   
   .nav-theme {
-    background-color: #101018f8;
+    background-color:rgb(0, 0, 0);
     font-size: 20px;
   }
   
@@ -11,6 +11,7 @@
     box-shadow: 1px 1px 1px #222;
     animation: moveDown 0.5s ease-in-out;
   }
+
   
   @keyframes moveDown {
     from {
