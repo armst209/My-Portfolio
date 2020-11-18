@@ -1,14 +1,38 @@
+
+
+
+
+
+
+
 .logo {
     width: 12%;
   }
-  
+
+.hover:hover{
+  padding:none;
+  color:white;
+  border-bottom: 2px solid white;
+  transition: 3s ease;
+
+}
+
   .nav-theme {
-    background-color:rgb(0, 0, 0);
-    font-size: 20px;
+    background-color:rgba(0, 0, 0, 0.719);
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+   
+  }
+
+  
+  .animate-navbar {
+    
   }
   
   .animate-navbar {
-    box-shadow: 1px 1px 1px #222;
+    opacity: none;
+    box-shadow:none;
     animation: moveDown 0.5s ease-in-out;
   }
 

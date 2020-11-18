@@ -1,33 +1,14 @@
 
-
+/* 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-::-webkit-scrollbar{
-  width:10px;
-  
-}
-
-::-webkit-scrollbar-track{
-  background-color: none;
-}
-
-::-webkit-scrollbar-thumb{
-  background:rgb(0, 0, 0);
-  border-radius: 25px;
-  height: 25px;
-  
-}
 
 body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1rem;
-  line-height: 1.6;
-  background-color: #fff;
-  color: #333;
+ 
 }
 a {
   text-decoration: none;
@@ -54,19 +35,17 @@ h1 {
   z-index: 1;
   width: 100%;
   height: 70px;
-  opacity: 0.9;
+  opacity: .9;
   background-color:none;
-  /* background-image: url("./images/Gradient-Abstract-Shapes-Background-Orange.jpg"); */
-  /* background-color:rgb(241, 241, 241); */
+  
   background-size:cover;
-  box-shadow: 2px 2px 2px #565656;
+ 
   margin-bottom: 1rem;
-  /* border-top: 3px solid #565656; */
-  /* border-bottom: 3px solid #565656; */
+  
   font-family: 'Josefin Sans', sans-serif;
-  /* position:fixed; */
-}
-.nav-logo{
+ 
+} */
+/* .nav-logo{
 
   height: 50px;
 }
@@ -87,14 +66,6 @@ h1 {
   text-transform:uppercase;
   color: #565656;
   font-family: 'Exo', sans-serif;
-}
-.navlist{
-
-  display:flex;
-  flex-direction:row;
-  justify-content: space-evenly;
-  
-  
 }
 
 .contact-link {
@@ -137,18 +108,6 @@ h1 {
 
 }
 
-#home {
-  /* display:flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  text-align:center; */
-  background-color:white;
-  width:100%;
-  height: auto;
- 
-}
-
 .i {
 
   position: absolute;
@@ -178,7 +137,11 @@ h1 {
   border: 2px solid black;
 }
 
-@media only screen and (max-width: 700px) {
+.nav-link {
+  color:blue;
+} */
+
+/* @media only screen and (max-width: 700px) {
 .navbar{
   height: auto;
 }
@@ -187,7 +150,7 @@ h1 {
   padding-top:300px;
 }
  .navlist{
-   /* padding: 20px 10px 10px 0; */
+
    align-items:center;
    flex-direction: column;
    align-items: center;
@@ -216,4 +179,4 @@ h1 {
 
  }
 
-}
+} */

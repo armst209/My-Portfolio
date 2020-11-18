@@ -4,11 +4,20 @@ import styled from "styled-components";
 
 const MyTitleMessage = styled.h1`
   position: absolute;
-  width: 100%;
-  top: 22rem;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.719);
   margin-top: -125px;
   text-align: center;
+  padding: 10px;
+  font-family: "Josefin Sans", sans-serif;
   strong {
     font-size: 1.25em;
   }
@@ -36,7 +45,7 @@ const Title = () => {
             Hi, I'm
             <br />
             <span>
-              <strong>Aaron Armstrong</strong>
+              <strong>AARON ARMSTRONG</strong>
             </span>
           </div>
           <div className="sub">
