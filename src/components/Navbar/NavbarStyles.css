@@ -1,48 +1,52 @@
-
-
-
-
-
-
-
 .logo {
-    width: 12%;
-  }
+  width: 12%;
+  display:none;
+}
 
-.hover:hover{
-  padding:none;
-  color:white;
+.hover:hover {
+  padding: none;
+  color: white;
   border-bottom: 2px solid white;
-  transition: 3s ease;
+
 
 }
 
-  .nav-theme {
-    background-color:rgba(0, 0, 0, 0.719);
-    font-size: 18px;
-    font-family: 'Josefin Sans', sans-serif;
-    text-transform: uppercase;
-   
+.nav-theme {
+  /* background-color: rgba(0, 0, 0, 0.719); */
+  background-color: transparent;
+  font-size: 18px;
+  width:100%;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  height: 60px;
+
+}
+
+.nav-theme.active {
+  background-color: rgba(0, 0, 0, 0.719);
+  
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover {
+
+  color: white;
+
+}
+
+.animate-navbar {
+  opacity: none;
+  box-shadow: none;
+  animation: moveDown 0.5s ease-in-out;
+}
+
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5rem);
   }
 
-  
-  .animate-navbar {
-    
+  to {
+    transform: translateY(0rem);
   }
-  
-  .animate-navbar {
-    opacity: none;
-    box-shadow:none;
-    animation: moveDown 0.5s ease-in-out;
-  }
-
-  
-  @keyframes moveDown {
-    from {
-      transform: translateY(-5rem);
-    }
-    to {
-      transform: translateY(0rem);
-    }
-  }
-  
+}

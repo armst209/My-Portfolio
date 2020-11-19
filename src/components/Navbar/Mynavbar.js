@@ -1,12 +1,15 @@
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+// import ClosedNavIcon from "../../assets/icons/3lines_icon_closed.png";
+// import OpenNavIcon from "../../assets/icons/3lines_icon.png";
 import Logo from "../../assets/icons/kurlogo-01.png";
-import { Transition } from "react-transition-group";
-// import { css } from "emotion";
+
 import "./NavbarStyles.css";
 
 const Mynavbar = () => {
+  const [navbar, setNavbar] = useState(false);
+
   const [homeIcon, setHomeIcon] = useState(<i class="lni lni-home"></i>);
   const [aboutIcon, setAboutIcon] = useState(
     <i className="fas fa-address-card"></i>
@@ -46,19 +49,35 @@ const Mynavbar = () => {
     setContactIcon(contactIcon);
   };
 
+  const changeNavBg = () => {
+    if (window.scrollY >= 600) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeNavBg);
+
   return (
     <>
       <Navbar
+        id="navbar"
         fixed="top"
         collapseOnSelect
         expand="md"
         variant="dark"
-        className="animate-navbar nav-theme justify-content-between"
+        className={
+          navbar
+            ? "nav-theme active animate-navbar justify-content-between"
+            : "nav-theme"
+        }
       >
         <Navbar.Brand href="#home">
           <img className="logo" src={Logo} alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ml-auto">
             <Nav.Link

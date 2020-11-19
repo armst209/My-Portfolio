@@ -1,0 +1,61 @@
+
+#skills{
+  display:flex;
+  flex-direction: column;
+  width:100%;
+  
+  margin:0;
+}
+
+.skills-cards{
+
+  width:100%;
+  display:flex;
+  padding:0;
+  margin:0;
+}
+
+.card-deck{
+
+  margin:0;
+}
+.skills-h1{
+  width:100%;
+  display:flex;
+  padding:0;
+  margin:0;
+}
+.focus {
+    transition: transform 0.3s;
+  }
+  
+  .focus:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-title {
+    font-size: 2em;
+    font-weight: 700;
+  }
+  
+  .image-style {
+    width: 3em;
+  }
+  
+  .font-details {
+    font-size: 3em;
+    font-weight: 500;
+    color:black;
+    
+  }
+  
+  .font-details-b {
+    font-size: 3em;
+    font-weight: 500;
+    color: #ffffff;
+  }
+
+  .skill-title{
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  

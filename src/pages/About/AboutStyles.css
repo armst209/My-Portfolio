@@ -1,16 +1,143 @@
+#about {
+
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0 4em 0;
+
+}
+
+.about-h1{
+  width:100%;
+}
+
+.about-h4{
+  text-align:center;
+}
+.about-comp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 5em;
+  width:100%;
+  font-size: 1.1em;
+  font-family: 'Josefin Sans', sans-serif;
+  outline:none;
+  text-align:none;
+}
 
 
 
-.about {
-    background-color: transparent;
-    font-size: 1.1em;
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  
-  .profile {
-    max-width: 18em;
-  }
-  
-  .my-details {
-    background-color: rgba(255, 255, 255, 0.747);
-  }
+
+.para-links {
+  display: flex;
+  flex-direction: column;
+  width: 50%; 
+   /* padding: 20px 70px; */
+}
+
+.img-thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  background-color: none;
+  border: none;
+  width: 50%;
+
+}
+
+.about-links {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows:auto;
+  justify-items: center;
+}
+
+.about-links>div {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+
+  width: 300px;
+  border-top: 2px solid black;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid black;
+  padding: 20px 0;
+
+}
+
+.about-btn {
+
+  width: 100%;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: none;
+  background-image: url('../../assets/img/profile/aa_actionshot_1.jpg');
+
+}
+
+.about-btn-text:hover {
+  background-color: rgb(0, 0, 0);
+
+}
+
+.about-btn-text {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.719);
+  color: white;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.about-btn-display {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+
+}
+
+
+
+.para {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+.line-1 {
+  animation: moveLeft 0.5s ease-in-out;
+  border-top: 2px solid black;
+  width: 15%;
+}
+
+.line-2 {
+  margin-top: 10px;
+  border-top: 2px solid black;
+  width: 10%;
+}
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 40px;
+}
