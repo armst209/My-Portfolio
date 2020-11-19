@@ -1,48 +1,51 @@
 #about {
 
-  display:flex;
-  flex-direction:column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1em 0 4em 0;
 
 }
 
-.about-h1{
-  width:100%;
+.about-h1 {
+  width: 100%;
+
 }
 
-.about-h4{
-  text-align:center;
+.about-h4 {
+  text-align: center;
 }
+
 .about-comp {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 1em 5em;
-  width:100%;
+  width: 100%;
   font-size: 1.1em;
   font-family: 'Josefin Sans', sans-serif;
-  outline:none;
-  text-align:none;
+  outline: none;
+  text-align: none;
 }
-
-
 
 
 .para-links {
   display: flex;
   flex-direction: column;
-  width: 50%; 
-   /* padding: 20px 70px; */
+  width: 50%;
+  /* padding: 20px 70px; */
 }
 
-.img-thumbnail {
+.img-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+  padding: .25em;
+  border-radius: none;
+  max-width: 100%;
+  height: auto;
   background-color: none;
   border: none;
   width: 50%;
@@ -52,13 +55,21 @@
 .about-links {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows:auto;
+  grid-template-rows: auto;
   justify-items: center;
 }
 
 .about-links>div {
   display: flex;
   justify-content: center;
+}
+
+.about-hover:hover {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+
+
+
 }
 
 .about-img {
@@ -76,14 +87,20 @@
 
   width: 100%;
   height: 40px;
-  border: 1px solid white;
   border-radius: none;
   background-image: url('../../assets/img/profile/aa_actionshot_1.jpg');
 
 }
 
+.about-btn:hover {
+  background-image: none;
+
+}
+
 .about-btn-text:hover {
-  background-color: rgb(0, 0, 0);
+  background-color:black;
+
+
 
 }
 

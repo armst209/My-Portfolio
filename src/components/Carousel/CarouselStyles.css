@@ -2,3 +2,20 @@
     height: 100vh;
     object-fit: cover;
   }
+
+  .arrow-link{
+
+    position: absolute;
+    color:white;
+    /* width:300px; */
+    
+    bottom:2px;
+    
+  }
+
+  .arrow-link:hover{
+    color:white;
+    border-top: 3px solid white;
+    padding:0;
+    
+  }

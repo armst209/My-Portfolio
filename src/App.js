@@ -3,8 +3,11 @@ import Mynavbar from "./components/Navbar/Mynavbar";
 import Mycarousel from "./components/Carousel/Mycarousel";
 import Title from "./components/Title/Title";
 import About from "./pages/About/About";
-import "./App.css";
+
 import Skills from "./pages/Skills/Skills";
+import Contact from "./pages/Contact/Contact";
+import "./App.css";
+import Portfolio from "./pages/Portfolio/Portfolio";
 
 const App = () => {
   return (
@@ -14,7 +17,8 @@ const App = () => {
       <Mycarousel />
       <About />
       <Skills />
-      My Portfolio
+      <Portfolio />
+      <Contact />
     </div>
   );
 };

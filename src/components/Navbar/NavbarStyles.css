@@ -1,12 +1,14 @@
 .logo {
-  width: 12%;
-  display:none;
+  width: 100px;
+  display:flex;
+  height:auto;
 }
 
 .hover:hover {
   padding: none;
   color: white;
   border-bottom: 2px solid white;
+  border-top: 2px solid white;
 
 
 }
@@ -19,6 +21,7 @@
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   height: 60px;
+  
 
 }
 
@@ -27,6 +30,13 @@
   
 }
 
+a{
+  color:white;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+  color:white;
+}
 
 .navbar-dark .navbar-nav .nav-link:hover {
 

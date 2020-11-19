@@ -5,6 +5,7 @@
   "dependencies": {
     "@emotion/css": "^11.0.0",
     "@emotion/react": "^11.1.1",
+    "@merc/react-timeline": "^0.1.42",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
     "@testing-library/user-event": "^12.2.2",

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import "../../wickedcss.min.css";
 
 const MyScroll = styled.div`
   position: relative;
@@ -23,10 +24,9 @@ const MyScroll = styled.div`
 const Scrolldown = () => {
   return (
     <MyScroll>
-      {/* <div className="turn">
-        <span> &gt; </span>
-      </div> */}
-      <i class="lni lni-chevron-down"></i>
+      <a className="arrow-link floater" href="#about">
+        <i class="lni lni-chevron-down"></i>
+      </a>
     </MyScroll>
   );
 };

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-// import ClosedNavIcon from "../../assets/icons/3lines_icon_closed.png";
-// import OpenNavIcon from "../../assets/icons/3lines_icon.png";
+
 import Logo from "../../assets/icons/kurlogo-01.png";
 
 import "./NavbarStyles.css";
@@ -17,9 +16,9 @@ const Mynavbar = () => {
   const [skillsIcon, setSkillsIcon] = useState(
     <i class="fas fa-clipboard-list"></i>
   );
-  const [expIcon, setExpIcon] = useState(
-    <i class="fas fa-chalkboard-teacher"></i>
-  );
+  // const [expIcon, setExpIcon] = useState(
+  //   <i class="fas fa-chalkboard-teacher"></i>
+  // );
   const [projectsIcon, setProjectsIcon] = useState(
     <i class="fas fa-briefcase"></i>
   );
@@ -38,9 +37,9 @@ const Mynavbar = () => {
   const setIconHoverSkills = (skillsIcon) => {
     setSkillsIcon(skillsIcon);
   };
-  const setIconHoverExp = (expIcon) => {
-    setExpIcon(expIcon);
-  };
+  // const setIconHoverExp = (expIcon) => {
+  //   setExpIcon(expIcon);
+  // };
   const setIconHoverProjects = (projectsIcon) => {
     setProjectsIcon(projectsIcon);
   };
@@ -109,7 +108,7 @@ const Mynavbar = () => {
             >
               {skillsIcon}
             </Nav.Link>
-            <Nav.Link
+            {/* <Nav.Link
               className="hover"
               onMouseEnter={() => setIconHoverExp("Experience")}
               onMouseOut={() =>
@@ -118,14 +117,14 @@ const Mynavbar = () => {
               href="#experience"
             >
               {expIcon}
-            </Nav.Link>
+            </Nav.Link> */}
             <Nav.Link
               className="hover"
-              onMouseEnter={() => setIconHoverProjects("Projects")}
+              onMouseEnter={() => setIconHoverProjects("Portfolio")}
               onMouseOut={() =>
                 setIconHoverProjects(<i class="fas fa-briefcase"></i>)
               }
-              href="#projects"
+              href="#portfolio"
             >
               {projectsIcon}
             </Nav.Link>

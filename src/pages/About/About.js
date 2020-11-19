@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import "./AboutStyles.css";
 import Profile from "../../assets/img/profile/326652_2557718583407_1895126079_o.jpg";
 import "../../wickedcss.min.css";
+import bgImage from "../../assets/img/background/white-bg.png";
 import Image from "react-bootstrap/Image";
 import MenuIcon from "../../assets/icons/3lines_icon_black.png";
 import Button from "react-bootstrap/Button";
@@ -12,7 +13,17 @@ import "../About/AboutStyles.css";
 
 const About = () => {
   return (
-    <div id="about">
+    <div
+      id="about"
+      style={
+        {
+          // backgroundColor: "whitesmoke",
+          // backgroundImage: `url(${bgImage}), radial-gradient(#444, #111)`,
+          // backgroundRepeat: "no-repeat",
+          // backgroundPosition: "center center",
+        }
+      }
+    >
       <div className="about-h1">
         <h1 className="">
           ABOUT ME
@@ -22,7 +33,7 @@ const About = () => {
       </div>
 
       <div className="about-comp">
-        <div className="img-thumbnail">
+        <div className="img-thumb">
           <img className="about-img" src={Profile} alt="profile" />
         </div>
         <div className="para-links">
@@ -53,7 +64,7 @@ const About = () => {
           </div>
 
           <div className="about-links">
-            <div>
+            <div className="about-hover">
               <a href="#contact">
                 <Button variant="">
                   <div className="about-btn">
@@ -71,7 +82,7 @@ const About = () => {
                 </Button>
               </a>
             </div>
-            <div>
+            <div className="about-hover">
               <a
                 href="https://drive.google.com/file/d/1UYj_WS0cVFzE2talDd8Ejbj38tSoegiO/view?usp=sharing"
                 target="_blank"
@@ -86,7 +97,7 @@ const About = () => {
                 </Button>
               </a>
             </div>
-            <div>
+            <div className="about-hover">
               <a
                 href="https://github.com/armst209"
                 target="_blank"
@@ -107,7 +118,7 @@ const About = () => {
                 </Button>
               </a>
             </div>
-            <div>
+            <div className="about-hover">
               <a
                 href="https://www.linkedin.com/in/aaronlamararmstrong/"
                 target="_blank"
