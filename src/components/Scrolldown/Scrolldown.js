@@ -25,7 +25,7 @@ const Scrolldown = () => {
   return (
     <MyScroll>
       <a className="arrow-link floater" href="#about">
-        <i class="lni lni-chevron-down"></i>
+        <i class="lni lni-chevron-down tobottom"></i>
       </a>
     </MyScroll>
   );

@@ -2,6 +2,8 @@ import React from "react";
 import "./ContactStyles.css";
 import "../About/AboutStyles.css";
 import Button from "react-bootstrap/Button";
+import "../../wickedcss.min.css";
+
 import bgImage from "../../assets/img/background/contact.jpg";
 
 const Contact = () => {
@@ -100,6 +102,14 @@ const Contact = () => {
             </Button>
           </a>
         </div>
+      </div>
+      <div className="totop-arrow">
+        <a className="floater" href="#home">
+          <i
+            class="lni lni-chevron-down totop"
+            style={{ transform: "rotate(180deg) scale(2)" }}
+          ></i>
+        </a>
       </div>
     </div>
   );
