@@ -8,15 +8,38 @@
     position: absolute;
     color:white;
     /* width:300px; */
-    
     bottom:2px;
     
   }
 
-  .tobottom:hover{
-    color:white;
-    border-top: 2.5px solid white;
-    
-    
+  .arrow-link:hover{
+    animation-name: floater;
+    -webkit-animation-name: floater;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+    color: white;
+
   }
+
+  @keyframes floater {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8%);
+    }
+  }
+  @-webkit-keyframes floater {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(8%);
+    }
+  }
+ 
+  
   

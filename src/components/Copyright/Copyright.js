@@ -11,9 +11,10 @@ const Copyright = () => {
 const copyStyles = {
   display: "flex",
   justifyContent: "center",
-  backgroundColor: "black",
+  backgroundColor: "transparent",
   color: "white",
   fontFamily: `'Josefin Sans', sans-serif`,
   paddingBottom: "1em",
+  marginTop: "5em",
 };
 export default Copyright;

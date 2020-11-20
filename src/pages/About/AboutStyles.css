@@ -20,47 +20,55 @@
 
 .about-comp {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1em 5em;
+  padding: 0 5em;
   width: 100%;
   font-size: 1.1em;
   font-family: 'Josefin Sans', sans-serif;
   outline: none;
-  text-align: none;
 }
 
 
 .para-links {
   display: flex;
   flex-direction: column;
-  width: 50%;
-  /* padding: 20px 70px; */
+  /* width: 50%; */
+  padding: 20px 20px;
 }
 
 .img-thumb {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: .25em;
+  margin-bottom: 1.5em;
   border-radius: none;
   max-width: 100%;
   height: auto;
+  border-top: 2px solid black;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid black;
   background-color: none;
-  border: none;
-  width: 50%;
+  padding: 1em 0
+  /* width: 50%; */
 
 }
 
 .about-links {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   justify-items: center;
+  border-top: 2px solid black;
+
+  border-bottom: 2px solid black;
+  padding: 10px 0;
+  margin: 1em 0 0 0;
 }
 
-.about-links>div {
+.about-links >div {
   display: flex;
   justify-content: center;
 }
@@ -68,6 +76,7 @@
 .about-hover:hover {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
+  transition: 0.1s;
 
 
 
@@ -76,11 +85,9 @@
 .about-img {
 
   width: 300px;
-  border-top: 2px solid black;
-  border-right: none;
-  border-left: none;
-  border-bottom: 2px solid black;
-  padding: 20px 0;
+
+  padding: 0;
+  border-radius: 50%;
 
 }
 
@@ -100,6 +107,7 @@
 
 .about-btn-text:hover {
   background-color:black;
+  transition: 0.1s;
 
 
 
@@ -135,6 +143,7 @@
   text-align: center;
   margin-bottom: 10px;
   font-family: 'Raleway', sans-serif;
+  /* padding: 0 7em; */
 }
 
 

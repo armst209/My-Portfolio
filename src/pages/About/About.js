@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./AboutStyles.css";
-import Profile from "../../assets/img/profile/326652_2557718583407_1895126079_o.jpg";
+import Profile from "../../assets/img/profile/aa_headshot_circle_2.png";
 import "../../wickedcss.min.css";
 import bgImage from "../../assets/img/background/white-bg.png";
 import Image from "react-bootstrap/Image";
@@ -43,8 +43,10 @@ const About = () => {
       </div>
 
       <div className="about-comp">
-        <div className="img-thumb">
-          <img className="about-img" src={Profile} alt="profile" />
+        <div>
+          <div className="img-thumb">
+            <img className="about-img" src={Profile} alt="profile" />
+          </div>
         </div>
         <div className="para-links">
           <h4
@@ -74,7 +76,7 @@ const About = () => {
           </div>
 
           <div className="about-links">
-            <div className="about-hover">
+            {/* <div className="about-hover">
               <a href="#contact">
                 <Button variant="">
                   <div className="about-btn">
@@ -91,7 +93,7 @@ const About = () => {
                   </div>
                 </Button>
               </a>
-            </div>
+            </div> */}
             <div className="about-hover">
               <a
                 href="https://drive.google.com/file/d/1UYj_WS0cVFzE2talDd8Ejbj38tSoegiO/view?usp=sharing"

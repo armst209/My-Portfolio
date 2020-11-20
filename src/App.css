@@ -10,6 +10,10 @@
     align-items: center;
   }
 
+  .about-links{
+    grid-template-columns: auto;
+  }
+
   .about-h4 {
     text-align: center;
   }
@@ -34,6 +38,11 @@
   .navbar-dark .navbar-toggler {
     border: none;
   }
+  .navbar-nav{
+
+  
+    padding-top:1em;
+  }
 
   .navbar-dark .navbar-toggler-icon {
     width: 1.3em;
@@ -54,6 +63,14 @@
    
   
 }
+
+.contact-links{
+
+  grid-template-columns: auto;
+  
+  
+}
+
 
 }
 

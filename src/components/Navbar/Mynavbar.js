@@ -10,6 +10,7 @@ const Mynavbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   const [homeIcon, setHomeIcon] = useState(<i class="lni lni-home"></i>);
+
   const [aboutIcon, setAboutIcon] = useState(
     <i className="fas fa-address-card"></i>
   );

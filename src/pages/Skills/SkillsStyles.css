@@ -72,6 +72,11 @@
     color:black;
     
   }
+
+  a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+  }
   
   .font-details-b {
     font-size: 3em;

@@ -24,7 +24,7 @@ const MyScroll = styled.div`
 const Scrolldown = () => {
   return (
     <MyScroll>
-      <a className="arrow-link floater" href="#about">
+      <a className="arrow-link" href="#about">
         <i class="lni lni-chevron-down tobottom"></i>
       </a>
     </MyScroll>

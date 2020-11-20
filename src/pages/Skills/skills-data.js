@@ -8,17 +8,21 @@ import L_REACT_ROUTER from "../../assets/img/skills/react-router.svg";
 // import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
 import L_REACT_BOOTSTRAP from "../../assets/img/skills/react-bootstrap.svg";
 import L_STYLED_COMPONENTS from "../../assets/img/skills/styled-components.svg";
-import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
-import L_EXPRESS from "../../assets/img/skills/express.svg";
+import L_NODE_JS from "../../assets/img/skills/nodejs.png";
+import L_EXPRESS from "../../assets/img/skills/express.png";
 import L_DJANGO from "../../assets/img/skills/django.svg";
 import L_ANGULAR from "../../assets/img/skills/angular.svg";
 import L_MONGODB from "../../assets/img/skills/mongodb.svg";
+import L_PHASER from "../../assets/img/skills/phaser.png";
 import L_POSTGRESQL from "../../assets/img/skills/postgresql.svg";
+import L_FLSTUDIO from "../../assets/img/skills/postgresql.svg";
+import L_ABLETON from "../../assets/img/skills/postgresql.svg";
+
 import L_MSSQL from "../../assets/img/skills/mssql.svg";
 import L_GIT from "../../assets/img/skills/git-icon.svg";
 import L_HEROKU from "../../assets/img/skills/heroku.svg";
 import L_SURGE from "../../assets/img/skills/surge.svg";
-import L_GITHUB_PAGES from "../../assets/img/skills/github.svg";
+import L_GITHUB_PAGES from "../../assets/img/skills/github.png";
 import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
 import L_TYPESCRIPT from "../../assets/img/skills/typescript.svg";
 import L_POSTMAN from "../../assets/img/skills/postman.svg";
@@ -57,18 +61,7 @@ export const skills = {
       imgSrc: L_BOOTSTRAP,
       skillName: "Bootstrap",
     },
-    {
-      link: "https://angular.io/",
-      imgAltText: "Angular",
-      imgSrc: L_ANGULAR,
-      skillName: "Angular",
-    },
-    {
-      link: "https://reactjs.org/",
-      imgAltText: "React JS",
-      imgSrc: L_REACT,
-      skillName: "React JS",
-    },
+
     {
       link: "https://redux.js.org/",
       imgAltText: "Redux",
@@ -113,6 +106,26 @@ export const skills = {
       imgAltText: "Postman",
       imgSrc: L_POSTMAN,
       skillName: "Postman",
+    },
+  ],
+  frameworks: [
+    {
+      link: "https://angular.io/",
+      imgAltText: "Angular",
+      imgSrc: L_ANGULAR,
+      skillName: "Angular",
+    },
+    {
+      link: "https://reactjs.org/",
+      imgAltText: "React JS",
+      imgSrc: L_REACT,
+      skillName: "React JS",
+    },
+    {
+      link: "https://www.postman.com/",
+      imgAltText: "Phaser",
+      imgSrc: L_PHASER,
+      skillName: "Phaser",
     },
   ],
   hostingPlatforms: [
@@ -187,6 +200,20 @@ export const skills = {
       imgAltText: "GIT",
       imgSrc: L_GIT,
       skillName: "GIT",
+    },
+  ],
+  daws: [
+    {
+      link: "https://git-scm.com/",
+      imgAltText: "FL Studio",
+      imgSrc: L_FLSTUDIO,
+      skillName: "FL Studio",
+    },
+    {
+      link: "https://git-scm.com/",
+      imgAltText: "Ableton",
+      imgSrc: L_ABLETON,
+      skillName: "Ableton",
     },
   ],
 };

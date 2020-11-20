@@ -5,7 +5,7 @@ import { Timeline, Events, UrlButton, ImageEvent } from "@merc/react-timeline";
 import PickAFlick from "../../assets/img/website-screenshots/paf-homepage.png";
 import TTT from "../../assets/img/website-screenshots/ttt-homepage.png";
 import Break from "../../assets/img/website-screenshots/break-hompage.png";
-import bgImage from "../../assets/img/background/white-bg.png";
+import bgImage from "../../assets/img/profile/aa_actionshot_1.jpg";
 // projects
 import L_ReactToDoList from "../../assets/img/projects/React_ToDo_List.webp";
 import L_MernTipCalc from "../../assets/img/projects/mern_tip_calc.webp";
@@ -33,6 +33,10 @@ import L_DJANGO from "../../assets/img/skills/django.svg";
 import L_DIGITAL_OCEAN from "../../assets/img/skills/digital-ocean.svg";
 import L_GIT from "../../assets/img/skills/github-api.svg";
 import L_MATERIALUI from "../../assets/img/skills/material-ui-1.svg";
+import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
+import L_TYPESCRIPT from "../../assets/img/skills/typescript.svg";
+import L_POSTMAN from "../../assets/img/skills/postman.png";
+import L_MDB from "../../assets/img/skills/moviedb.svg";
 
 const Portfolio = () => {
   return (
@@ -53,6 +57,7 @@ const Portfolio = () => {
             fontSize: "2.5rem",
             color: "black",
             width: "100%",
+            marginBottom: "2em",
           }}
         >
           PORTFOLIO
@@ -72,23 +77,32 @@ const Portfolio = () => {
             <div>
               <Accordion>
                 <Card>
-                  <img className="card-image" src={PickAFlick} alt="" />
+                  <img
+                    className="card-image"
+                    src={PickAFlick}
+                    alt="pickaflick"
+                  />
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="0"
                     className="p-2 text-center accordian-main"
                   >
-                    PROJECT DETAILS
+                    <div>PROJECT DETAILS</div>
                   </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="0" className="text-left">
                     <Card.Body>
-                      <strong>Description:</strong>ssfsfdsfsfsdf
+                      <strong>Description:</strong>A web application that allows
+                      users to search for movies by genre, release year and
+                      actor.
                       <hr />
                       <strong>Features:</strong>
                       <ul className="list-styles pt-1">
-                        <li>sfsdfsdfsd</li>
-                        <li>sdfsdfsdfsf</li>
+                        <li>
+                          Users can save favorited movies to personal watchlist
+                          (Favorites Bar)
+                        </li>
+                        <li>Users can view chosen movie's description</li>
                       </ul>
                       <hr />
                       <strong>Tech used:</strong>
@@ -129,12 +143,45 @@ const Portfolio = () => {
                         <li>
                           <span className="p-2">
                             <Image
-                              src={L_GIT}
-                              alt="Github API"
+                              src={L_JAVASCRIPT}
+                              alt="JavaScript"
                               rounded
                               className="image-style1 m-1"
                             ></Image>{" "}
-                            GitHub API
+                            JavaScript
+                          </span>
+                        </li>
+                        <li>
+                          <span className="p-2">
+                            <Image
+                              src={L_POSTMAN}
+                              alt="Postman"
+                              rounded
+                              className="image-style1 m-1"
+                            ></Image>{" "}
+                            Postman
+                          </span>
+                        </li>
+                        <li>
+                          <span className="p-2">
+                            <Image
+                              src={L_TYPESCRIPT}
+                              alt="TypeScript"
+                              rounded
+                              className="image-style1 m-1"
+                            ></Image>{" "}
+                            TypeScript
+                          </span>
+                        </li>
+                        <li>
+                          <span className="p-2">
+                            <Image
+                              src={L_MDB}
+                              alt="Movie Database API"
+                              rounded
+                              className="image-style1 m-1"
+                            ></Image>{" "}
+                            The Movie Database API
                           </span>
                         </li>
                       </ul>
@@ -143,15 +190,21 @@ const Portfolio = () => {
                 </Card>
               </Accordion>
             </div>
-            <div className="d-flex justify-content-between flex-nowrap text-center">
+            <div
+              className="d-flex justify-content-between flex-nowrap text-center"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <UrlButton href="https://paf-movie-dbg.surge.sh/" target="_blank">
-                SEE LIVE
+                <div>SEE LIVE</div>
               </UrlButton>
               <UrlButton
                 href="https://github.com/armst209/Pick-A-Flick-Website"
                 target="_blank"
               >
-                SOURCE CODE
+                <div>SOURCE CODE</div>
               </UrlButton>
             </div>
           </div>
@@ -167,7 +220,7 @@ const Portfolio = () => {
                     eventKey="0"
                     className="p-2 text-center accordian-main"
                   >
-                    PROJECT DETAILS
+                    <div>PROJECT DETAILS</div>
                   </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="0" className="text-left">
@@ -232,15 +285,21 @@ const Portfolio = () => {
                 </Card>
               </Accordion>
             </div>
-            <div className="d-flex justify-content-between flex-nowrap text-center">
+            <div
+              className="d-flex justify-content-between flex-nowrap text-center"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <UrlButton href="http://break-ent.surge.sh/" target="_blank">
-                SEE LIVE
+                <div>SEE LIVE</div>
               </UrlButton>
               <UrlButton
                 href="https://github.com/armst209/Final-Project"
                 target="_blank"
               >
-                SOURCE CODE
+                <div>SOURCE CODE</div>
               </UrlButton>
             </div>
           </div>
@@ -256,7 +315,7 @@ const Portfolio = () => {
                     eventKey="0"
                     className="p-2 text-center accordian-main"
                   >
-                    PROJECT DETAILS
+                    <div>PROJECT DETAILS</div>
                   </Accordion.Toggle>
 
                   <Accordion.Collapse eventKey="0" className="text-left">
@@ -296,8 +355,8 @@ const Portfolio = () => {
                         <li>
                           <span className="p-2">
                             <Image
-                              src={L_REACT}
-                              alt="React"
+                              src={L_ANGULAR}
+                              alt="Angular"
                               rounded
                               className="image-style1 m-1"
                             ></Image>{" "}
@@ -307,12 +366,12 @@ const Portfolio = () => {
                         <li>
                           <span className="p-2">
                             <Image
-                              src={L_GIT}
+                              src={L_JAVASCRIPT}
                               alt="Github API"
                               rounded
                               className="image-style1 m-1"
                             ></Image>{" "}
-                            GitHub API
+                            JavaScript
                           </span>
                         </li>
                       </ul>
@@ -321,18 +380,24 @@ const Portfolio = () => {
                 </Card>
               </Accordion>
             </div>
-            <div className="d-flex justify-content-between flex-nowrap text-center">
+            <div
+              className="d-flex justify-content-between flex-nowrap text-center"
+              style={{
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
               <UrlButton
                 href="http://ttt-mobile-suits.surge.sh/"
                 target="_blank"
               >
-                SEE LIVE
+                <div>SEE LIVE</div>
               </UrlButton>
               <UrlButton
                 href="https://github.com/armst209/Sample-Landing-Page"
                 target="_blank"
               >
-                SOURCE CODE
+                <div>SOURCE CODE</div>
               </UrlButton>
             </div>
           </div>

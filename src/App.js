@@ -20,7 +20,6 @@ const App = () => {
       <Skills />
       <Portfolio />
       <Contact />
-      <Copyright />
     </div>
   );
 };

@@ -118,6 +118,38 @@ const Skills = () => {
                 </Card.Body>
               </Card>
 
+              {/* Frameworks & Libraries */}
+
+              <Card className="focus" style={{ marginBottom: "10px" }}>
+                <Card.Body>
+                  <Card.Title className="text-center  card-title skill-title">
+                    <div>Frameworks/</div>
+                    <div>Libraries</div>
+                  </Card.Title>
+                  <hr />
+                  <Card.Text className="card-text d-flex justify-content-start flex-column">
+                    {skills.frameworks.map((skill, index) => (
+                      <span className="p-2" key={index}>
+                        <a
+                          className="text-decoration-none"
+                          href={skill.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Image
+                            src={skill.imgSrc}
+                            alt={skill.imgAltText}
+                            rounded
+                            className="image-style m-1"
+                          ></Image>{" "}
+                          {skill.skillName}
+                        </a>
+                      </span>
+                    ))}
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+
               {/* Hosting Platforms */}
               <Card className="focus">
                 <Card.Body>
@@ -212,7 +244,7 @@ const Skills = () => {
               </Card>
               {/* Version Control */}
 
-              <Card className="focus">
+              <Card className="focus" style={{ marginBottom: "10px" }}>
                 <Card.Body>
                   <Card.Title className="text-center  card-title skill-title">
                     Version Control
@@ -235,6 +267,35 @@ const Skills = () => {
                         {skills.versionControl[0].skillName}
                       </a>
                     </span>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+
+              <Card className="focus" style={{ marginBottom: "10px" }}>
+                <Card.Body>
+                  <Card.Title className="text-center  card-title skill-title">
+                    DAWs
+                  </Card.Title>
+                  <hr />
+                  <Card.Text className="card-text d-flex justify-content-start flex-column">
+                    {skills.daws.map((skill, index) => (
+                      <span className="p-2" key={index}>
+                        <a
+                          className="text-decoration-none"
+                          href={skill.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Image
+                            src={skill.imgSrc}
+                            alt={skill.imgAltText}
+                            rounded
+                            className="image-style m-1"
+                          ></Image>{" "}
+                          {skill.skillName}
+                        </a>
+                      </span>
+                    ))}
                   </Card.Text>
                 </Card.Body>
               </Card>

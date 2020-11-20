@@ -1,7 +1,9 @@
 import React from "react";
 import "./ContactStyles.css";
 import "../About/AboutStyles.css";
+import "../../components/Carousel/CarouselStyles.css";
 import Button from "react-bootstrap/Button";
+import Copyright from "../../components/Copyright/Copyright";
 import "../../wickedcss.min.css";
 
 import bgImage from "../../assets/img/background/contact.jpg";
@@ -26,6 +28,7 @@ const Contact = () => {
             marginTop: "40px",
             fontSize: "2.5rem",
             color: "white",
+            marginBottom: "2em",
           }}
         >
           CONTACT
@@ -47,8 +50,8 @@ const Contact = () => {
             rel="noopener noreferrer"
           >
             <Button variant="">
-              <div className="about-btn">
-                <div className="about-btn-text">
+              <div className="contact-button">
+                <div className="contact-button-text">
                   <div>Email Me</div>
                   <div>
                     <i
@@ -69,8 +72,8 @@ const Contact = () => {
             rel="noopener noreferrer"
           >
             <Button variant="">
-              <div className="about-btn">
-                <div className="about-btn-text">
+              <div className="contact-button">
+                <div className="contact-button-text">
                   <div>LinkedIn</div>
                   <div>
                     <i
@@ -91,8 +94,8 @@ const Contact = () => {
             rel="noopener noreferrer"
           >
             <Button variant="">
-              <div className="about-btn">
-                <div className="about-btn-text">
+              <div className="contact-button">
+                <div className="contact-button-text">
                   <div>Github</div>
                   <div>
                     <i class="fab fa-github" style={{ marginLeft: "5px" }}></i>
@@ -104,13 +107,11 @@ const Contact = () => {
         </div>
       </div>
       <div className="totop-arrow">
-        <a className="floater" href="#home">
-          <i
-            class="lni lni-chevron-down totop"
-            style={{ transform: "rotate(180deg) scale(2)" }}
-          ></i>
+        <a className="" href="#home">
+          <i class="lni lni-chevron-up toparrow"></i>
         </a>
       </div>
+      <Copyright />
     </div>
   );
 };
