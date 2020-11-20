@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-import Logo from "../../assets/icons/kurlogo-01.png";
+import Logo from "../../assets/icons/aa_logo.png";
 
 import "./NavbarStyles.css";
 
@@ -12,16 +12,16 @@ const Mynavbar = () => {
   const [homeIcon, setHomeIcon] = useState(<i class="lni lni-home"></i>);
 
   const [aboutIcon, setAboutIcon] = useState(
-    <i className="fas fa-address-card"></i>
+    <i class="far fa-address-card"></i>
   );
   const [skillsIcon, setSkillsIcon] = useState(
-    <i class="fas fa-clipboard-list"></i>
+    <i class="lni lni-certificate"></i>
   );
   // const [expIcon, setExpIcon] = useState(
   //   <i class="fas fa-chalkboard-teacher"></i>
   // );
   const [projectsIcon, setProjectsIcon] = useState(
-    <i class="fas fa-briefcase"></i>
+    <i class="lni lni-briefcase"></i>
   );
 
   const [contactIcon, setContactIcon] = useState(
@@ -93,7 +93,7 @@ const Mynavbar = () => {
               className="hover"
               onMouseEnter={() => setIconHoverAbt("About")}
               onMouseOut={() =>
-                setIconHoverAbt(<i class="fas fa-address-card"></i>)
+                setIconHoverAbt(<i class="far fa-address-card"></i>)
               }
               href="#about"
             >
@@ -103,7 +103,7 @@ const Mynavbar = () => {
               className="hover"
               onMouseEnter={() => setIconHoverSkills("Skills")}
               onMouseOut={() =>
-                setIconHoverSkills(<i class="fas fa-clipboard-list"></i>)
+                setIconHoverSkills(<i class="lni lni-certificate"></i>)
               }
               href="#skills"
             >
@@ -123,7 +123,7 @@ const Mynavbar = () => {
               className="hover"
               onMouseEnter={() => setIconHoverProjects("Portfolio")}
               onMouseOut={() =>
-                setIconHoverProjects(<i class="fas fa-briefcase"></i>)
+                setIconHoverProjects(<i class="lni lni-briefcase"></i>)
               }
               href="#portfolio"
             >

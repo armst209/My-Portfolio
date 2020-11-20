@@ -44,9 +44,10 @@
 .card-image{
   width:auto;
   height: 200px;
+  margin:5px 0;
 }
 .card-image:hover{
-opacity:.5;
+
 
 }
 

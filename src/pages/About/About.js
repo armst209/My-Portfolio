@@ -1,13 +1,7 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
 import "./AboutStyles.css";
 import Profile from "../../assets/img/profile/aa_headshot_circle_2.png";
 import "../../wickedcss.min.css";
-import bgImage from "../../assets/img/background/white-bg.png";
-import Image from "react-bootstrap/Image";
-import MenuIcon from "../../assets/icons/3lines_icon_black.png";
 import Button from "react-bootstrap/Button";
 import "../About/AboutStyles.css";
 
@@ -55,13 +49,13 @@ const About = () => {
               fontFamily: `'Josefin Sans', sans-serif`,
             }}
           >
-            Hi there! I'm <strong>&nbsp;AARON ARMSTRONG.</strong>
+            Hi there! I'm <strong>AARON ARMSTRONG.</strong>
           </h4>
           <div className="para">
             <br />I am a former educator, technical recruiter and Japanese
-            translator turned software developer. As a recruiter, I was very
+            translator turned frontend developer. As a recruiter, I was very
             curious about the technologies my clients were using, so I decided
-            to pursue an after-hours boot camp at Grand Circus.
+            to pursue an after-hours boot camp at Grand Circus (Detroit, MI).
             <br />
             My background in education and translation has strengthened my
             organizational skills and attention to detail while my time as a
@@ -156,16 +150,6 @@ const About = () => {
       </div>
     </div>
   );
-};
-
-const containStlye = {
-  margin: "none",
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "center",
-  alignItems: "center",
-  width: "100%",
-  padding: "none",
 };
 
 export default About;

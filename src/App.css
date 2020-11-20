@@ -1,7 +1,23 @@
+@media only screen and (max-width:1000px){
+
+  .skill-cards{
+
+  
+    grid-template-columns: auto;
+    
+   }
+   .para{
+    padding: 0;
+
+   }
+   
+
+}
+
+
+
 @media only screen and (max-width: 800px) {
-  .logo {
-    display: none;
-  }
+
 
   .about-comp {
     flex-direction: column;
@@ -70,6 +86,14 @@
   
   
 }
+.skill-cards{
+
+  
+  grid-template-columns: auto;
+  padding: 0;
+
+  
+ }
 
 
 }
@@ -110,9 +134,7 @@
     height: 125px;
     margin: 0 10px;
   }
-  .logo {
-    display: none;
-  }
+ 
  
 }
 
@@ -127,8 +149,9 @@
 }
 
 #skills{
-  padding:2em .5em;
+  padding:2em 1.5em;
 }
+
 }
 
 @media only screen and (max-width: 330px) {

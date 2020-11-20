@@ -103,7 +103,7 @@ const Title = () => {
           <div className="sub">
             <Typewriter
               options={{
-                strings: ["Web Developer", "Student", "Musician"],
+                strings: ["Frontend Developer", "Lifelong Learner"],
                 autoStart: true,
                 loop: true,
                 delay: 50,

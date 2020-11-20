@@ -28,7 +28,7 @@ const Contact = () => {
             marginTop: "40px",
             fontSize: "2.5rem",
             color: "white",
-            marginBottom: "2em",
+            marginBottom: "1em",
           }}
         >
           CONTACT
@@ -106,11 +106,7 @@ const Contact = () => {
           </a>
         </div>
       </div>
-      <div className="totop-arrow">
-        <a className="" href="#home">
-          <i class="lni lni-chevron-up toparrow"></i>
-        </a>
-      </div>
+
       <Copyright />
     </div>
   );

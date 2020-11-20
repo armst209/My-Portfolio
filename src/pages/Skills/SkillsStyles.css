@@ -30,16 +30,19 @@
   font-style:normal;
   border-bottom: 2px solid white;
 }
+
 .text-dark {
   color:white;
 }
 
-.skills-cards{
+.skill-cards{
 
-  width:100%;
-  display:flex;
-  padding:0;
-  margin:0;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ column-gap: 1em;
+ row-gap: 1em;
+ padding: 0 3em;
+ 
 }
 
 .card-deck{
