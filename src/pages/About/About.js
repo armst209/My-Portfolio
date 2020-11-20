@@ -25,7 +25,17 @@ const About = () => {
       }
     >
       <div className="about-h1">
-        <h1 className="">
+        <h1
+          className=""
+          style={{
+            fontFamily: `'Josefin Sans', sans-serif`,
+            marginTop: "40px",
+            fontSize: "2.5rem",
+            color: "black",
+            width: "100%",
+            marginBottom: "2em",
+          }}
+        >
           ABOUT ME
           <div className="line-1 slideRight"></div>
           <div className="line-2 slideLeft"></div>

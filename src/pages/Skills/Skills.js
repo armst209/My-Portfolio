@@ -24,11 +24,14 @@ const Skills = () => {
     >
       <div className="skill-h1">
         <h1
-          className="text-center font-details-b pb-4"
+          className=""
           style={{
             fontFamily: `'Josefin Sans', sans-serif`,
             marginTop: "40px",
             fontSize: "2.5rem",
+            color: "white",
+            width: "100%",
+            marginBottom: "2em",
           }}
         >
           SKILLS
@@ -64,7 +67,7 @@ const Skills = () => {
                     {skills.frontend.map((skill, index) => (
                       <span className="p-2" key={index}>
                         <a
-                          className="text-dark text-decoration-none"
+                          className="text-decoration-none"
                           href={skill.link}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -86,7 +89,7 @@ const Skills = () => {
 
             {/* Backend */}
             <Col md={4}>
-              <Card className="focus mt-2 mb-2">
+              <Card className="focus" style={{ marginBottom: "10px" }}>
                 <Card.Body>
                   <Card.Title className="text-center  card-title skill-title">
                     Backend
@@ -96,7 +99,7 @@ const Skills = () => {
                     {skills.backend.map((skill, index) => (
                       <span className="p-2" key={index}>
                         <a
-                          className="text-dark text-decoration-none"
+                          className="text-decoration-none"
                           href={skill.link}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -116,7 +119,7 @@ const Skills = () => {
               </Card>
 
               {/* Hosting Platforms */}
-              <Card className="focus mt-2 mb-2 ">
+              <Card className="focus">
                 <Card.Body>
                   <Card.Title className="text-center  card-title skill-title">
                     Hosting Platforms
@@ -126,7 +129,7 @@ const Skills = () => {
                     {skills.hostingPlatforms.map((skill, index) => (
                       <span className="p-2" key={index}>
                         <a
-                          className="text-dark text-decoration-none"
+                          className="text-decoration-none"
                           href={skill.link}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -148,7 +151,7 @@ const Skills = () => {
 
             {/* Programming Languages */}
             <Col md={4}>
-              <Card className="focus mt-2 mb-2">
+              <Card className="focus" style={{ marginBottom: "10px" }}>
                 <Card.Body>
                   <Card.Title className="text-center  card-title skill-title">
                     Programming Languages
@@ -158,7 +161,7 @@ const Skills = () => {
                     {skills.programmingLanguages.map((skill, index) => (
                       <span className="p-2" key={index}>
                         <a
-                          className="text-dark text-decoration-none"
+                          className="text-decoration-none"
                           href={skill.link}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -179,7 +182,7 @@ const Skills = () => {
 
               {/* Database */}
 
-              <Card className="focus mt-2 mb-2">
+              <Card className="focus" style={{ marginBottom: "10px" }}>
                 <Card.Body>
                   <Card.Title className="text-center  card-title skill-title">
                     Database
@@ -189,7 +192,7 @@ const Skills = () => {
                     {skills.databases.map((skill, index) => (
                       <span className="p-2" key={index}>
                         <a
-                          className="text-dark text-decoration-none"
+                          className="text-decoration-none"
                           href={skill.link}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -209,7 +212,7 @@ const Skills = () => {
               </Card>
               {/* Version Control */}
 
-              <Card className="focus mt-2 mb-2">
+              <Card className="focus">
                 <Card.Body>
                   <Card.Title className="text-center  card-title skill-title">
                     Version Control
@@ -218,7 +221,7 @@ const Skills = () => {
                   <Card.Text className="card-text d-flex justify-content-start flex-column">
                     <span className="p-2">
                       <a
-                        className="text-dark text-decoration-none"
+                        className="text-decoration-none"
                         href={skills.versionControl[0].link}
                         target="_blank"
                         rel="noopener noreferrer"

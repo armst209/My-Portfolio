@@ -27,8 +27,8 @@
   }
 
   .hover:hover {
-    border-bottom: 4px solid white;
-    border-top:4px solid white;
+    border-bottom: 2px solid white;
+    border-top:2px solid white;
     text-align:center;
   }
   .navbar-dark .navbar-toggler {
@@ -107,6 +107,10 @@
   grid-template-columns: auto;
   
   
+}
+
+#skills{
+  padding:2em .5em;
 }
 }
 
