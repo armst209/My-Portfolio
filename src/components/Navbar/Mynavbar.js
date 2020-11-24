@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 
-import Logo from "../../assets/icons/aa_logo.png";
+import Logo from "../../assets/icons/kurlogo-01.png";
 
 import "./NavbarStyles.css";
 
@@ -29,6 +29,7 @@ const Mynavbar = () => {
   );
 
   //Hover Icon functions
+
   const setIconHover = (homeIcon) => {
     setHomeIcon(homeIcon);
   };

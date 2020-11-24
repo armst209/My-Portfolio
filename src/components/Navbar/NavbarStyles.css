@@ -5,16 +5,18 @@
   
 }
 
+.hover{
+  /* transition: 0.1s; */
+  color: white;
+}
+
 .hover:hover {
   padding: none;
   color: white;
   border-bottom: 2px solid white;
   border-top: 2px solid white;
 
-
-
 }
-
 
 
 .nav-theme {

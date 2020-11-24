@@ -8,6 +8,12 @@ import Skills from "./pages/Skills/Skills";
 import Contact from "./pages/Contact/Contact";
 import "./App.css";
 import Portfolio from "./pages/Portfolio/Portfolio";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+AOS.init({
+  duration: 1200,
+});
 
 const App = () => {
   return (

@@ -15,6 +15,6 @@ const copyStyles = {
   color: "white",
   fontFamily: `'Josefin Sans', sans-serif`,
   paddingBottom: "1em",
-  marginTop: "5em",
+  marginTop: "0",
 };
 export default Copyright;

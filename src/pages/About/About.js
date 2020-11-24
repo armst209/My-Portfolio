@@ -31,12 +31,12 @@ const About = () => {
           }}
         >
           ABOUT ME
-          <div className="line-1 slideRight"></div>
-          <div className="line-2 slideLeft"></div>
+          <div data-aos="fade-right" className="line-1"></div>
+          <div data-aos="fade-left" className="line-2"></div>
         </h1>
       </div>
 
-      <div className="about-comp">
+      <div className="about-comp" data-aos="fade-up">
         <div>
           <div className="img-thumb">
             <img className="about-img" src={Profile} alt="profile" />
@@ -61,7 +61,7 @@ const About = () => {
             organizational skills and attention to detail while my time as a
             recruiter has developed my project management skills.
             <br />
-            As I have transitioned into the role of software developer, these
+            As I have transitioned into the role of frontend developer, these
             skills, combined with the technical knowledge I gained at Grand
             Circus, have become vital in how I approach coding issues, team
             projects, and learning new technologies. I hope to add my experience
@@ -70,27 +70,9 @@ const About = () => {
           </div>
 
           <div className="about-links">
-            {/* <div className="about-hover">
-              <a href="#contact">
-                <Button variant="">
-                  <div className="about-btn">
-                    <div className="about-btn-text">
-                      <div>Contact Me</div>
-
-                      <div>
-                        <i
-                          className="far fa-address-book"
-                          style={{ marginLeft: "5px" }}
-                        ></i>
-                      </div>
-                    </div>
-                  </div>
-                </Button>
-              </a>
-            </div> */}
             <div className="about-hover">
               <a
-                href="https://drive.google.com/file/d/1UYj_WS0cVFzE2talDd8Ejbj38tSoegiO/view?usp=sharing"
+                href="https://drive.google.com/file/d/19kUZG0VTETeS9JsBLTIat-yBG0-MGtI3/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >

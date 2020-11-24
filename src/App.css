@@ -11,6 +11,11 @@
 
    }
    
+   .nav-theme{
+
+    height:auto;
+  }
+  
 
 }
 
@@ -57,7 +62,7 @@
   .navbar-nav{
 
   
-    padding-top:1em;
+   
   }
 
   .navbar-dark .navbar-toggler-icon {
@@ -78,6 +83,11 @@
     grid-template-columns: auto;
    
   
+}
+
+.nav-theme{
+
+  height:auto;
 }
 
 .contact-links{
@@ -102,6 +112,12 @@
   .navbar {
     height: auto;
   }
+
+  .ejaVO {
+     top: 0%; 
+     left: 0; 
+     transform: none; 
+}
 
   .arrow-point .arrow-point-2 {
     display: none;

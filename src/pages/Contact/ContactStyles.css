@@ -38,6 +38,24 @@
     
 }
 
+.contact-up{
+
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.contact-up > a:hover{
+    color:white;
+    animation-name: floater;
+    -webkit-animation-name: floater;
+    animation-duration: 1.5s;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-iteration-count: infinite;
+}
+
 
 
 
@@ -72,4 +90,23 @@
   .contact-button-text:hover{
       background-color: transparent;
       transition: 0.1s;
+  }
+
+  @keyframes floater {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(8%);
+    }
+  }
+  @-webkit-keyframes floater {
+    0%,
+    100% {
+      -webkit-transform: translateY(0);
+    }
+    50% {
+      -webkit-transform: translateY(8%);
+    }
   }

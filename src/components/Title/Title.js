@@ -43,6 +43,7 @@ const MyTitleMessage = styled.h1`
   .menu-icon {
     display: flex;
     position: absolute;
+
     transform: scale(0.04);
     bottom: -90%;
   }
@@ -54,9 +55,9 @@ const MyTitleMessage = styled.h1`
   }
 
   @media only screen and (max-width: 700px) {
-    top: 60%;
-    left: 0;
-    transform: scale(0.7);
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   @media only screen and (max-width: 500px) {
     top: 50%;
@@ -68,15 +69,12 @@ const MyTitleMessage = styled.h1`
       padding-left: 4px;
     }
     .menu-icon {
-      display: flex;
       position: absolute;
       top: -70%;
-      transform: scale(0.04);
       border: 3px solid black;
       box-shadow: 2px 2px 5px black;
     }
     .menu-icon-2 {
-      display: flex;
       position: absolute;
       top: -80%;
       transform: scale(0.04) rotate(180deg);
@@ -90,6 +88,7 @@ const Title = () => {
   return (
     <MyTitleMessage>
       <img className="menu-icon-2" src={MenuIcon} alt="" />
+
       <div className="titleMessage">
         <div className="heading">
           <div className="main text-center mb-3">
@@ -112,6 +111,7 @@ const Title = () => {
           </div>
         </div>
       </div>
+
       <img className="menu-icon" src={MenuIcon} alt="" />
     </MyTitleMessage>
   );

@@ -52,21 +52,26 @@ const Portfolio = () => {
         >
           PORTFOLIO
           <div
-            className="line-1 slideRight"
+            data-aos="fade-right"
+            className="line-1"
             style={{ borderColor: "black" }}
           ></div>
           <div
-            className="line-2 slideLeft"
+            data-aos="fade-left"
+            className="line-2"
             style={{ borderColor: "black" }}
           ></div>
         </h1>
       </div>
-      <div className="portfolio-cards">
-        <div className="paf-card card">
+      <div className="portfolio-cards" data-aos="fade-up">
+        <div className="paf-card card card-bord">
           <div className="d-flex justify-content-between flex-column mt-1">
             <div>
               <Accordion>
                 <Card>
+                  <div className="card-img-text">
+                    Pick-A-Flick: A Movie Browsing App
+                  </div>
                   <img
                     className="card-image"
                     src={PickAFlick}
@@ -199,11 +204,14 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div className="break-card card">
+        <div className="break-card card card-bord">
           <div className="d-flex justify-content-between flex-column mt-1">
             <div>
               <Accordion>
                 <Card>
+                  <div className="card-img-text">
+                    Break: A Gaming Platform Web App
+                  </div>
                   <img className="card-image" src={Break} alt="" />
                   <Accordion.Toggle
                     as={Card.Header}
@@ -374,11 +382,14 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div className="ttt-card card">
+        <div className="ttt-card card card-bord">
           <div className="d-flex justify-content-between flex-column mt-1">
             <div>
               <Accordion>
                 <Card>
+                  <div className="card-img-text">
+                    Sample Landing Page for Product/Online Shop
+                  </div>
                   <img className="card-image" src={TTT} alt="" />
                   <Accordion.Toggle
                     as={Card.Header}
@@ -392,9 +403,7 @@ const Portfolio = () => {
                     <Card.Body>
                       <strong>Description: </strong>
                       Simple, sample landing page made for fun. Used to test and
-                      review material learned in bootcamp. Two of my hobbies
-                      include building Gundam plastic models and watching anime,
-                      so I decided mix my hobbies with coding.
+                      review material learned in bootcamp.
                       <hr />
                       <strong>Tech used:</strong>
                       <ul>
@@ -470,8 +479,8 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div className="gitfinder-card card">
-          {/* <div className="d-flex justify-content-between flex-column mt-1">
+        {/* <div className="gitfinder-card card"> */}
+        {/* <div className="d-flex justify-content-between flex-column mt-1">
             <div>
               <Accordion>
                 <Card>
@@ -565,7 +574,7 @@ const Portfolio = () => {
               </UrlButton>
             </div>
           </div> */}
-        </div>
+        {/* </div> */}
       </div>
     </div>
   );

@@ -34,16 +34,18 @@ const Skills = () => {
         >
           SKILLS
           <div
-            className="line-1 slideRight"
+            data-aos="fade-right"
+            className="line-1"
             style={{ borderColor: "white" }}
           ></div>
           <div
-            className="line-2 slideLeft"
+            data-aos="fade-left"
+            className="line-2"
             style={{ borderColor: "white" }}
           ></div>
         </h1>
       </div>
-      <div className="skill-cards">
+      <div className="skill-cards" data-aos="fade-down">
         <Card className="focus">
           <Card.Body>
             <Card.Title className="text-center card-title skill-title">

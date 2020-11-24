@@ -1,5 +1,6 @@
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
 import L_CSS3 from "../../assets/img/skills/css3.svg";
+import L_SASS from "../../assets/img/skills/sass-1.svg";
 
 import L_BOOTSTRAP from "../../assets/img/skills/bootstrap-4.svg";
 import L_REACT from "../../assets/img/skills/react.svg";
@@ -39,6 +40,12 @@ export const skills = {
       imgAltText: "CSS 3",
       imgSrc: L_CSS3,
       skillName: "CSS3",
+    },
+    {
+      link: "https://sass-lang.com/",
+      imgAltText: "SASS",
+      imgSrc: L_SASS,
+      skillName: "SASS",
     },
     {
       link: "https://www.javascript.com/",
@@ -102,7 +109,7 @@ export const skills = {
       skillName: "React JS",
     },
     {
-      link: "https://www.postman.com/",
+      link: "https://phaser.io/",
       imgAltText: "Phaser",
       imgSrc: L_PHASER,
       skillName: "Phaser",
@@ -166,13 +173,13 @@ export const skills = {
   ],
   daws: [
     {
-      link: "https://git-scm.com/",
+      link: "https://www.image-line.com/",
       imgAltText: "FL Studio",
       imgSrc: L_FLSTUDIO,
       skillName: "FL Studio",
     },
     {
-      link: "https://git-scm.com/",
+      link: "https://www.ableton.com/",
       imgAltText: "Ableton",
       imgSrc: L_ABLETON,
       skillName: "Ableton",
