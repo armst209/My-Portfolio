@@ -1,40 +1,25 @@
-@media only screen and (max-width:1000px){
-
-  .skill-cards{
-
-  
+@media only screen and (max-width:1000px) {
+  .skill-cards {
     grid-template-columns: auto;
-    
-   }
-   .para{
-    padding: 0;
-
-   }
-   
-   .nav-theme{
-
-    height:auto;
   }
-  
-
+  .para {
+    padding: 0;
+  }
+  .nav-theme {
+    height: auto;
+  }
 }
 
-
-
 @media only screen and (max-width: 800px) {
-
-
   .about-comp {
     flex-direction: column;
     padding: 1em;
     justify-content: center;
     align-items: center;
   }
-
-  .about-links{
+  .about-links {
     grid-template-columns: auto;
   }
-
   .about-h4 {
     text-align: center;
   }
@@ -42,7 +27,6 @@
     text-align: center;
     font-size: auto;
   }
-
   .para-links {
     padding: 10px;
     width: 100%;
@@ -50,21 +34,16 @@
   .img-thumbnail {
     width: 100%;
   }
-
+  .hover {}
   .hover:hover {
     border-bottom: 2px solid white;
-    border-top:2px solid white;
-    text-align:center;
+    border-top: 2px solid white;
+    text-align: center;
   }
   .navbar-dark .navbar-toggler {
     border: none;
   }
-  .navbar-nav{
-
-  
-   
-  }
-
+  .navbar-nav {}
   .navbar-dark .navbar-toggler-icon {
     width: 1.3em;
     height: 1.3em;
@@ -72,61 +51,41 @@
     opacity: 0.5;
     transform: rotate(180deg);
   }
-
   .navbar-dark .navbar-toggler-icon:hover {
     opacity: 1;
     /* box-shadow: 2px 2px 5px black; */
     background-image: url("./assets/icons/3lines_icon.png");
   }
   .portfolio-cards {
-    
     grid-template-columns: auto;
-   
-  
-}
-
-.nav-theme{
-
-  height:auto;
-}
-
-.contact-links{
-
-  grid-template-columns: auto;
-  
-  
-}
-.skill-cards{
-
-  
-  grid-template-columns: auto;
-  padding: 0;
-
-  
- }
-
-
+  }
+  .nav-theme {
+    height: auto;
+  }
+  .contact-links {
+    grid-template-columns: auto;
+  }
+  .skill-cards {
+    grid-template-columns: auto;
+    padding: 0;
+  }
 }
 
 @media only screen and (max-width: 700px) {
   .navbar {
     height: auto;
   }
-
   .ejaVO {
-     top: 0%; 
-     left: 0; 
-     transform: none; 
-}
-
+    top: 0%;
+    left: 0;
+    transform: none;
+  }
   .arrow-point .arrow-point-2 {
     display: none;
   }
-
   .card-deck {
     padding: 2px 2em;
   }
-
   .main-home-container {
     padding-top: 300px;
   }
@@ -150,24 +109,15 @@
     height: 125px;
     margin: 0 10px;
   }
- 
- 
 }
 
 @media only screen and (max-width: 450px) {
-  
-.contact-links{
-
-
-  grid-template-columns: auto;
-  
-  
-}
-
-#skills{
-  padding:2em 1.5em;
-}
-
+  .contact-links {
+    grid-template-columns: auto;
+  }
+  #skills {
+    padding: 2em 1.5em;
+  }
 }
 
 @media only screen and (max-width: 330px) {

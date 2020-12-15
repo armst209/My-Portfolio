@@ -5,6 +5,7 @@ import { UrlButton } from "@merc/react-timeline";
 import PickAFlick from "../../assets/img/website-screenshots/paf-homepage.png";
 import TTT from "../../assets/img/website-screenshots/ttt-homepage.png";
 import Break from "../../assets/img/website-screenshots/break-hompage.png";
+import GITFIND from "../../assets/img/website-screenshots/githufind.png";
 
 // projects
 
@@ -14,6 +15,8 @@ import Card from "react-bootstrap/Card";
 // skills
 
 import L_ANGULAR from "../../assets/img/skills/angular.svg";
+
+import L_GITHUB_API from "../../assets/img/skills/github.png";
 import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
 import L_EXPRESS from "../../assets/img/skills/express.png";
 import Image from "react-bootstrap/Image";
@@ -27,18 +30,11 @@ import L_JQUERY from "../../assets/img/skills/jquery.png";
 import L_PHASER from "../../assets/img/skills/phaser.png";
 import L_HEROKU from "../../assets/img/skills/heroku.svg";
 import L_SQL from "../../assets/img/skills/sql.jpg";
+import L_REACT from "../../assets/img/skills/react.svg";
 
 const Portfolio = () => {
   return (
-    <div
-      id="portfolio"
-      style={
-        {
-          // backgroundColor: "whitesmoke",
-          // backgroundImage: `url(${bgImage})`,
-        }
-      }
-    >
+    <div id="portfolio">
       <div className="port-h1">
         <h1
           style={{
@@ -69,8 +65,9 @@ const Portfolio = () => {
             <div>
               <Accordion>
                 <Card>
-                  <div className="card-img-text">
-                    Pick-A-Flick: A Movie Browsing App
+                  <div className="card-img-text" style={{ lineHeight: "1" }}>
+                    <p>Pick-A-Flick: A Movie Browsing App </p>
+                    <p>(August 2020)</p>
                   </div>
                   <img
                     className="card-image"
@@ -209,8 +206,9 @@ const Portfolio = () => {
             <div>
               <Accordion>
                 <Card>
-                  <div className="card-img-text">
-                    Break: A Gaming Platform Web App
+                  <div className="card-img-text" style={{ lineHeight: "1" }}>
+                    <p>Break: A Gaming Platform Web App </p>
+                    <p>(September 2020)</p>
                   </div>
                   <img className="card-image" src={Break} alt="" />
                   <Accordion.Toggle
@@ -387,8 +385,9 @@ const Portfolio = () => {
             <div>
               <Accordion>
                 <Card>
-                  <div className="card-img-text">
-                    Sample Landing Page for Product/Online Shop
+                  <div className="card-img-text" style={{ lineHeight: "1" }}>
+                    <p>Sample Landing Page for Product/Online Shop</p>
+                    <p>(October 2020)</p>
                   </div>
                   <img className="card-image" src={TTT} alt="" />
                   <Accordion.Toggle
@@ -479,12 +478,16 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        {/* <div className="gitfinder-card card"> */}
-        {/* <div className="d-flex justify-content-between flex-column mt-1">
+        <div className="gitfinder-card card card-bord">
+          <div className="d-flex justify-content-between flex-column mt-1">
             <div>
               <Accordion>
                 <Card>
-                  <img className="card-image" src={TTT} alt="" />
+                  <div className="card-img-text" style={{ lineHeight: "1" }}>
+                    <p>Github Finder</p>
+                    <span>(December 2020)</span>
+                  </div>
+                  <img className="card-image" src={GITFIND} alt="" />
                   <Accordion.Toggle
                     as={Card.Header}
                     eventKey="0"
@@ -496,10 +499,8 @@ const Portfolio = () => {
                   <Accordion.Collapse eventKey="0" className="text-left">
                     <Card.Body>
                       <strong>Description: </strong>
-                      Simple, sample landing page made for fun. Used to test and
-                      review material learned in bootcamp. Two of my hobbies
-                      include building Gundam plastic models and watching anime,
-                      so I decided mix my hobbies with coding.
+                      Small project used to increase understanding of React
+                      hooks and Context API
                       <hr />
                       <strong>Tech used:</strong>
                       <ul>
@@ -528,23 +529,34 @@ const Portfolio = () => {
                         <li>
                           <span className="p-2">
                             <Image
-                              src={L_ANGULAR}
-                              alt="Angular"
+                              src={L_REACT}
+                              alt="React"
                               rounded
                               className="image-style1 m-1"
                             ></Image>{" "}
-                            Angular
+                            React
                           </span>
                         </li>
                         <li>
                           <span className="p-2">
                             <Image
                               src={L_JAVASCRIPT}
-                              alt="Github API"
+                              alt="Javascript"
                               rounded
                               className="image-style1 m-1"
                             ></Image>{" "}
                             JavaScript
+                          </span>
+                        </li>
+                        <li>
+                          <span className="p-2">
+                            <Image
+                              src={L_GITHUB_API}
+                              alt="Github API"
+                              rounded
+                              className="image-style1 m-1"
+                            ></Image>{" "}
+                            Github API
                           </span>
                         </li>
                       </ul>
@@ -560,21 +572,18 @@ const Portfolio = () => {
                 flexDirection: "column",
               }}
             >
-              <UrlButton
-                href="http://ttt-mobile-suits.surge.sh/"
-                target="_blank"
-              >
+              <UrlButton href="http://git-h-finder.surge.sh/" target="_blank">
                 <div>SEE LIVE</div>
               </UrlButton>
               <UrlButton
-                href="https://github.com/armst209/Sample-Landing-Page"
+                href="https://github.com/armst209/github-finder"
                 target="_blank"
               >
                 <div>SOURCE CODE</div>
               </UrlButton>
             </div>
-          </div> */}
-        {/* </div> */}
+          </div>
+        </div>
       </div>
     </div>
   );

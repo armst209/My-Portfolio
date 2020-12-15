@@ -16,6 +16,7 @@ import L_PHASER from "../../assets/img/skills/phaser.png";
 import L_POSTGRESQL from "../../assets/img/skills/postgresql.svg";
 import L_FLSTUDIO from "../../assets/img/skills/flstudio.png";
 import L_ABLETON from "../../assets/img/skills/ableton.png";
+import L_GITHUB_API from "../../assets/img/skills/github.png";
 
 import L_GIT from "../../assets/img/skills/git-icon.svg";
 import L_HEROKU from "../../assets/img/skills/heroku.svg";
@@ -67,6 +68,7 @@ export const skills = {
       imgSrc: L_REACT_BOOTSTRAP,
       skillName: "React Bootstrap",
     },
+
     {
       link: "https://styled-components.com/",
       imgAltText: "styled-components",

@@ -57,16 +57,10 @@ const About = () => {
             curious about the technologies my clients were using, so I decided
             to pursue an after-hours boot camp at Grand Circus (Detroit, MI).
             <br />
-            My background in education and translation has strengthened my
-            organizational skills and attention to detail while my time as a
-            recruiter has developed my project management skills.
-            <br />
             As I have transitioned into the role of frontend developer, these
             skills, combined with the technical knowledge I gained at Grand
             Circus, have become vital in how I approach coding issues, team
-            projects, and learning new technologies. I hope to add my experience
-            and skills to your tech team.
-            <br />
+            projects, and learning new technologies.
           </div>
 
           <div className="about-links">
