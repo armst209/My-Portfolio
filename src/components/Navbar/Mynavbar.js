@@ -17,9 +17,7 @@ const Mynavbar = () => {
   const [skillsIcon, setSkillsIcon] = useState(
     <i class="lni lni-certificate"></i>
   );
-  // const [expIcon, setExpIcon] = useState(
-  //   <i class="fas fa-chalkboard-teacher"></i>
-  // );
+
   const [projectsIcon, setProjectsIcon] = useState(
     <i class="lni lni-briefcase"></i>
   );
@@ -49,6 +47,8 @@ const Mynavbar = () => {
   const setIconHoverContact = (contactIcon) => {
     setContactIcon(contactIcon);
   };
+
+  //NAVBAR Scroll
 
   const changeNavBg = () => {
     if (window.scrollY >= 600) {
