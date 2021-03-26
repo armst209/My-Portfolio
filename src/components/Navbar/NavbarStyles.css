@@ -1,63 +1,64 @@
 .logo {
   width: 100px;
-  display:flex;
-  height:auto;
-  
+  display: flex;
+  height: auto;
 }
 
-.hover{
-  /* transition: 0.1s; */
+.logo:hover {
+  transition: all .2s ease-in-out;
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 0.2rem crimson);
+}
+
+.hover {
   color: white;
 }
 
 .hover:hover {
   padding: none;
-  color: white;
-  border-bottom: 2px solid white;
-  border-top: 2px solid white;
-
 }
 
+.mobile-nav-text {
+  display: none;
+}
+
+.main-nav {
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
 
 .nav-theme {
-  /* background-color: rgba(0, 0, 0, 0.719); */
   background-color: transparent;
   font-size: 18px;
-  width:100%;
+  width: 100%;
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
   height: 60px;
-
-
 }
 
 .nav-theme.active {
-  background-color: rgba(0, 0, 0, 0.719);
-  
+  background-color: black;
+  box-shadow: 5px 5px 8px black;
 }
 
- .navbar-nav{
-
-  flex-direction:row;
+.navbar-nav {
+  flex-direction: row;
   justify-content: space-evenly;
-  
 }
 
-a{
-  color:white;
+a {
+  color: white;
 }
 
-.navbar-dark .navbar-nav .nav-link{
-  color:white;
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: 400;
-  
 }
 
 .navbar-dark .navbar-nav .nav-link:hover {
-
   color: white;
-
 }
 
 .animate-navbar {
@@ -66,13 +67,164 @@ a{
   animation: moveDown 0.5s ease-in-out;
 }
 
+.mobile-navigation {
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 99.5%;
+  justify-content: center;
+  align-items: center;
+  width: 1px;
+  height: 100vh;
+  color: white;
+  background-color: black;
+  position: fixed;
+  font-family: 'Josefin Sans', sans-serif;
+  border-left: 3px solid white;
+  box-shadow: 0 5px 5px 5px black;
+  transition: all .5s ease-in-out;
+}
+
+.mobile-nav-close {
+  background-color: red;
+}
+
+.x-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 35%;
+  cursor: pointer;
+}
+
+.x-button p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.mobile-navigation ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.mobile-navigation li {
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.mobile-navigation a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+  cursor: pointer;
+}
+
+.mobile-navigation div {
+  font-size: 10px;
+  padding: 2px;
+  font-weight: 400;
+}
+
+.mobile-navigation a:active {
+  transform: scale(1.3);
+}
+
+.mobile-navigation i {
+  font-size: 30px;
+  filter: drop-shadow(2px 2px 5px black);
+}
+
+.navbar-ham-icon {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+.navbar-ham-icon img {
+  width: 20px;
+  transform: scale(1.5);
+  height: auto;
+  filter: drop-shadow(5px 5px 5px black);
+}
+
+.navbar-ham-icon:active {}
 
 @keyframes moveDown {
   from {
     transform: translateY(-5rem);
   }
-
   to {
     transform: translateY(0rem);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-navigation {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .navbar-ham-icon {
+    display: flex;
+  }
+  .ml-auto {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .logo:hover {
+    transition: none;
+    transform: none;
+    filter: none;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .mobile-nav-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  .logo:hover {
+    transition: none;
+    transform: none;
+    filter: none;
+  }
+  .navbar-ham-icon {
+    margin: 0 13px 0 0;
+  }
+  .x-button {
+    bottom: 25%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .x-button {
+    bottom: 20%;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .x-button {
+    bottom: 15%;
   }
 }

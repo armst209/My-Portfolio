@@ -1,17 +1,14 @@
 #about {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 2em 0 4em 0;
-
 }
 
 .about-h1 {
   width: 100%;
   font-family: 'Josefin Sans', sans-serif;
-
 }
 
 .about-h4 {
@@ -29,7 +26,6 @@
   font-family: 'Josefin Sans', sans-serif;
   outline: none;
 }
-
 
 .para-links {
   display: flex;
@@ -53,7 +49,6 @@
   background-color: none;
   padding: 1em 0
   /* width: 50%; */
-
 }
 
 .about-links {
@@ -62,13 +57,12 @@
   grid-template-rows: auto;
   justify-items: center;
   border-top: 2px solid black;
-
   border-bottom: 2px solid black;
   padding: 10px 0;
   margin: 1em 0 0 0;
 }
 
-.about-links >div {
+.about-links>div {
   display: flex;
   justify-content: center;
 }
@@ -77,40 +71,28 @@
   border-top: 2px solid black;
   border-bottom: 2px solid black;
   transition: 0.1s;
-
-
-
 }
 
 .about-img {
-
   width: 300px;
-
   padding: 0;
   border-radius: 50%;
-
 }
 
 .about-btn {
-
   width: 100%;
   height: 40px;
   border-radius: none;
-  background-image: url('../../assets/img/profile/aa_actionshot_1.jpg');
-
+  background-image: url('../../assets/img/profile/aa_actionshot_1.webp');
 }
 
 .about-btn:hover {
   background-image: none;
-
 }
 
 .about-btn-text:hover {
-  background-color:black;
+  background-color: black;
   transition: 0.1s;
-
-
-
 }
 
 .about-btn-text {
@@ -127,6 +109,11 @@
   font-family: 'Josefin Sans', sans-serif;
 }
 
+.about-btn-text>div {
+  display: flex;
+  flex-direction: row;
+}
+
 .about-btn-display {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -134,10 +121,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-
 }
-
-
 
 .para {
   text-align: center;
@@ -145,8 +129,6 @@
   font-family: 'Raleway', sans-serif;
   padding: 0 7em;
 }
-
-
 
 .line-1 {
   animation: moveLeft 0.5s ease-in-out;
@@ -165,6 +147,5 @@ h1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin-bottom: 40px;
 }

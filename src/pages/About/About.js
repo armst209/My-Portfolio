@@ -1,26 +1,15 @@
 import React from "react";
 import "./AboutStyles.css";
-import Profile from "../../assets/img/profile/aa_headshot_circle_2.png";
+import Profile from "../../assets/img/profile/aa_headshot_circle_2_50_1_50.png";
 import "../../wickedcss.min.css";
 import Button from "react-bootstrap/Button";
 import "../About/AboutStyles.css";
 
 const About = () => {
   return (
-    <div
-      id="about"
-      style={
-        {
-          // backgroundColor: "whitesmoke",
-          // backgroundImage: `url(${bgImage}), radial-gradient(#444, #111)`,
-          // backgroundRepeat: "no-repeat",
-          // backgroundPosition: "center center",
-        }
-      }
-    >
+    <div id="about">
       <div className="about-h1">
         <h1
-          className=""
           style={{
             fontFamily: `'Josefin Sans', sans-serif`,
             marginTop: "40px",
@@ -39,7 +28,7 @@ const About = () => {
       <div className="about-comp" data-aos="fade-up">
         <div>
           <div className="img-thumb">
-            <img className="about-img" src={Profile} alt="profile" />
+            <img className="about-img" src={Profile} alt="Aaron Armstrong" />
           </div>
         </div>
         <div className="para-links">
@@ -66,7 +55,7 @@ const About = () => {
           <div className="about-links">
             <div className="about-hover">
               <a
-                href="https://drive.google.com/file/d/19kUZG0VTETeS9JsBLTIat-yBG0-MGtI3/view?usp=sharing"
+                href="https://drive.google.com/file/d/1uqi1D_RiMxZm0d8nR-GTyHeNaL487Ijk/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -88,12 +77,14 @@ const About = () => {
                 <Button variant="">
                   <div className="about-btn">
                     <div className="about-btn-text">
-                      <div>Github</div>
                       <div>
-                        <i
-                          class="fab fa-github"
-                          style={{ marginLeft: "5px" }}
-                        ></i>
+                        Github
+                        <div>
+                          <i
+                            className="fab fa-github"
+                            style={{ marginLeft: "5px" }}
+                          ></i>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -109,12 +100,14 @@ const About = () => {
                 <Button variant="">
                   <div className="about-btn">
                     <div className="about-btn-text">
-                      <div>LinkedIn</div>
                       <div>
-                        <i
-                          class="fab fa-linkedin"
-                          style={{ marginLeft: "5px" }}
-                        ></i>
+                        LinkedIn
+                        <div>
+                          <i
+                            className="fab fa-linkedin"
+                            style={{ marginLeft: "5px" }}
+                          ></i>
+                        </div>
                       </div>
                     </div>
                   </div>

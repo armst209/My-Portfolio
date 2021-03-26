@@ -5,8 +5,7 @@ import "../../components/Carousel/CarouselStyles.css";
 import Button from "react-bootstrap/Button";
 import Copyright from "../../components/Copyright/Copyright";
 import "../../wickedcss.min.css";
-
-import bgImage from "../../assets/img/background/contact.jpg";
+import bgImage from "../../assets/img/background/contact_low.webp";
 
 const Contact = () => {
   return (
@@ -14,10 +13,11 @@ const Contact = () => {
       id="contact"
       style={{
         backgroundBlendMode: "multiply",
-        backgroundRepeat: "no-repeat",
+        backgroundRepeat: "repeat",
         backgroundPosition: "center center",
         backgroundImage: `url(${bgImage}),  radial-gradient(#444, #111)`,
         borderTop: "4px solid black",
+        objectFit: "fill",
       }}
     >
       <div className="contact-h1">
@@ -44,7 +44,7 @@ const Contact = () => {
           ></div>
         </h1>
       </div>
-      <div className="contact-links">
+      <div className="contact-links" data-aos="fade-up">
         <div className="contact-btn">
           <a
             href="mailto:armst209@gmail.com"
@@ -54,12 +54,14 @@ const Contact = () => {
             <Button variant="">
               <div className="contact-button">
                 <div className="contact-button-text">
-                  <div>Email Me</div>
                   <div>
-                    <i
-                      class="fas fa-envelope-square"
-                      style={{ marginLeft: "5px" }}
-                    ></i>
+                    Email Me
+                    <div>
+                      <i
+                        className="fas fa-envelope-square"
+                        style={{ marginLeft: "5px" }}
+                      ></i>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -76,12 +78,14 @@ const Contact = () => {
             <Button variant="">
               <div className="contact-button">
                 <div className="contact-button-text">
-                  <div>LinkedIn</div>
                   <div>
-                    <i
-                      class="fab fa-linkedin"
-                      style={{ marginLeft: "5px" }}
-                    ></i>
+                    LinkedIn
+                    <div>
+                      <i
+                        className="fab fa-linkedin"
+                        style={{ marginLeft: "5px" }}
+                      ></i>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -98,9 +102,14 @@ const Contact = () => {
             <Button variant="">
               <div className="contact-button">
                 <div className="contact-button-text">
-                  <div>Github</div>
                   <div>
-                    <i class="fab fa-github" style={{ marginLeft: "5px" }}></i>
+                    Github
+                    <div>
+                      <i
+                        className="fab fa-github"
+                        style={{ marginLeft: "5px" }}
+                      ></i>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -111,7 +120,7 @@ const Contact = () => {
 
       <div className="contact-up">
         <a href="#home">
-          <i class="lni lni-chevron-up"></i>
+          <i className="lni lni-chevron-up"></i>
         </a>
       </div>
 

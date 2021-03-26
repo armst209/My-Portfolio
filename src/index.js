@@ -2,12 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
-import { ThemeProvider } from "styled-components";
-import { theme } from "./themes/theme";
+
+import Loader from "./pages/Loader/Loader";
+import { Fragment } from "react";
+
+let loaderDisplay = () => {
+  let loading = document.getElementById("loader");
+  loading.style.opacity = "0";
+  loading.style.visibility = "hidden";
+  // setTimeout(() => {
+  //   loading.style.opacity = "0";
+  //   loading.style.visibility = "hidden";
+  // }, 2000);
+};
+
+window.onload = loaderDisplay;
 
 ReactDOM.render(
-  <ThemeProvider theme={theme}>
+  <Fragment>
+    <Loader id="loader" />
     <App />
-  </ThemeProvider>,
+  </Fragment>,
   document.getElementById("root")
 );

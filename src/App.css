@@ -1,3 +1,37 @@
+html {
+  scroll-behavior: smooth;
+}
+
+*:focus {
+  border: 2px solid white;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 13px;
+  background-color: black;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.541);
+  height: 30px;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #201f1f;
+}
+
 @media only screen and (max-width:1000px) {
   .skill-cards {
     grid-template-columns: auto;
@@ -34,27 +68,15 @@
   .img-thumbnail {
     width: 100%;
   }
-  .hover {}
-  .hover:hover {
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
-    text-align: center;
+  .hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
+  .hover:hover {}
   .navbar-dark .navbar-toggler {
     border: none;
-  }
-  .navbar-nav {}
-  .navbar-dark .navbar-toggler-icon {
-    width: 1.3em;
-    height: 1.3em;
-    background-image: url("./assets/icons/3lines_icon_closed.png");
-    opacity: 0.5;
-    transform: rotate(180deg);
-  }
-  .navbar-dark .navbar-toggler-icon:hover {
-    opacity: 1;
-    /* box-shadow: 2px 2px 5px black; */
-    background-image: url("./assets/icons/3lines_icon.png");
   }
   .portfolio-cards {
     grid-template-columns: auto;
@@ -68,6 +90,9 @@
   .skill-cards {
     grid-template-columns: auto;
     padding: 0;
+  }
+  .logo:active {
+    filter: drop-shadow(0 0 0.2rem crimson);
   }
 }
 
@@ -109,6 +134,10 @@
     height: 125px;
     margin: 0 10px;
   }
+  #skills {
+    background-position: none;
+    background-repeat: repeat;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -118,9 +147,83 @@
   #skills {
     padding: 2em 1.5em;
   }
+  .about-btn {
+    width: 300px;
+    height: 70px;
+  }
+  .about-btn-text {
+    width: 300px;
+    height: 100%;
+  }
+  .about-btn-text>div {
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-button {
+    width: 300px;
+    height: 70px;
+  }
+  .contact-button-text {
+    width: 300px;
+    height: 100%;
+    font-size: 30px;
+  }
+  .contact-button-text>div {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-links {
+    margin: 0;
+  }
+  .mobile-nav-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .about-btn {
+    width: 200px;
+    height: 60px;
+  }
+  .about-btn-text {
+    width: 200px;
+    height: 100%;
+  }
+  .about-btn-text>div {
+    font-size: 20px;
+  }
+  .about-img {
+    max-width: 250px;
+  }
+  .card-image {
+    height: 150px;
+  }
+  .contact-button, .contact-button-text {
+    width: 200px;
+    height: 60px;
+  }
 }
 
 @media only screen and (max-width: 330px) {
+  .about-links {
+    grid-template-columns: none;
+  }
+}
+
+@media only screen and (max-width: 300px) {
   .about-links {
     grid-template-columns: none;
   }

@@ -1,22 +1,17 @@
 import L_HTML5 from "../../assets/img/skills/html-5.svg";
 import L_CSS3 from "../../assets/img/skills/css3.svg";
 import L_SASS from "../../assets/img/skills/sass-1.svg";
-
 import L_BOOTSTRAP from "../../assets/img/skills/bootstrap-4.svg";
 import L_REACT from "../../assets/img/skills/react.svg";
-
 import L_REACT_BOOTSTRAP from "../../assets/img/skills/react-bootstrap.svg";
 import L_STYLED_COMPONENTS from "../../assets/img/skills/styled-components.svg";
 import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
 import L_EXPRESS from "../../assets/img/skills/express.png";
-
 import L_ANGULAR from "../../assets/img/skills/angular.svg";
-
 import L_PHASER from "../../assets/img/skills/phaser.png";
 import L_POSTGRESQL from "../../assets/img/skills/postgresql.svg";
-import L_FLSTUDIO from "../../assets/img/skills/flstudio.png";
-import L_ABLETON from "../../assets/img/skills/ableton.png";
-
+// import L_FLSTUDIO from "../../assets/img/skills/flstudio.svg";
+// import L_ABLETON from "../../assets/img/skills/ableton.svg";
 import L_GIT from "../../assets/img/skills/git-icon.svg";
 import L_HEROKU from "../../assets/img/skills/heroku.svg";
 import L_SURGE from "../../assets/img/skills/surge.svg";
@@ -150,7 +145,7 @@ export const skills = {
       skillName: "TypeScript",
     },
     {
-      link: "",
+      link: "https://www.w3schools.com/sql/sql_intro.asp",
       imgAltText: "SQL",
       imgSrc: L_SQL,
       skillName: "SQL",
@@ -167,23 +162,29 @@ export const skills = {
   versionControl: [
     {
       link: "https://git-scm.com/",
-      imgAltText: "GIT",
+      imgAltText: "GIT Icon",
       imgSrc: L_GIT,
       skillName: "GIT",
     },
-  ],
-  daws: [
     {
-      link: "https://www.image-line.com/",
-      imgAltText: "FL Studio",
-      imgSrc: L_FLSTUDIO,
-      skillName: "FL Studio",
-    },
-    {
-      link: "https://www.ableton.com/",
-      imgAltText: "Ableton",
-      imgSrc: L_ABLETON,
-      skillName: "Ableton",
+      link: "https://github.com/",
+      imgAltText: "Github",
+      imgSrc: L_GITHUB_PAGES,
+      skillName: "Github",
     },
   ],
+  // daws: [
+  //   {
+  //     link: "https://www.image-line.com/",
+  //     imgAltText: "FL Studio",
+  //     imgSrc: L_FLSTUDIO,
+  //     skillName: "FL Studio",
+  //   },
+  //   {
+  //     link: "https://www.ableton.com/",
+  //     imgAltText: "Ableton",
+  //     imgSrc: L_ABLETON,
+  //     skillName: "Ableton",
+  //   },
+  // ],
 };

@@ -1,10 +1,8 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
-// import Row from "react-bootstrap/Row";
-// import Col from "react-bootstrap/Col";
 import "./SkillsStyles.css";
-import bgImage from "../../assets/img/background/keyboard.jpg";
+import bgImage from "../../assets/img/background/keyboard_low.webp";
 
 // skills
 import { skills } from "./skills-data";
@@ -15,7 +13,6 @@ const Skills = () => {
       id="skills"
       style={{
         backgroundBlendMode: "multiply",
-        backgroundRepeat: "no-repeat",
         backgroundPosition: "center center",
         backgroundImage: `url(${bgImage}),  radial-gradient(#444, #111)`,
       }}
@@ -45,7 +42,7 @@ const Skills = () => {
           ></div>
         </h1>
       </div>
-      <div className="skill-cards" data-aos="fade-down">
+      <div className="skill-cards" data-aos="fade-up">
         <Card className="focus">
           <Card.Body>
             <Card.Title className="text-center card-title skill-title">
@@ -229,7 +226,7 @@ const Skills = () => {
             <hr />
             <Card.Text className="card-text d-flex justify-content-start flex-column">
               {skills.versionControl.map((skill, index) => (
-                <span className="p-2">
+                <span className="p-2" key={index}>
                   <a
                     className="text-decoration-none"
                     href={skill.link}
@@ -241,7 +238,7 @@ const Skills = () => {
                       alt={skills.imgAltText}
                       rounded
                       className="image-style m-1"
-                    ></Image>{" "}
+                    ></Image>
                     {skill.skillName}
                   </a>
                 </span>
@@ -251,7 +248,7 @@ const Skills = () => {
         </Card>
 
         <Card className="focus">
-          <Card.Body>
+          {/* <Card.Body>
             <Card.Title className="text-center  card-title skill-title">
               DAWs
             </Card.Title>
@@ -276,7 +273,7 @@ const Skills = () => {
                 </span>
               ))}
             </Card.Text>
-          </Card.Body>
+          </Card.Body> */}
         </Card>
       </div>
     </div>

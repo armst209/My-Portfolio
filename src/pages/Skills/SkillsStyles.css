@@ -1,93 +1,80 @@
-
-#skills{
-  display:flex;
+#skills {
+  display: flex;
   flex-direction: column;
-  width:100%;
-  padding:2em 2em;
-
+  width: 100%;
+  padding: 2em 2em;
 }
 
-
-.col-md-4{
+.col-md-4 {
   padding-right: 0;
   padding-left: 0;
   margin-bottom: 10px;
-  
-  border-radius:0;
-  background-color:transparent;
-  color:white;
+  border-radius: 0;
+  background-color: transparent;
+  color: white;
 }
 
-.card-body{
- 
-  background-color:  rgba(0, 0, 0, 0.719);
-  border:1px solid white;
-  
+.card-body {
+  background-color: rgba(0, 0, 0, 0.719);
+  border: 1px solid white;
 }
 
-.card-title{
+.card-title {
   text-transform: uppercase;
-  font-style:normal;
+  font-style: normal;
   border-bottom: 2px solid white;
 }
 
 .text-dark {
-  color:white;
+  color: white;
 }
 
-.skill-cards{
-
- display: grid;
- grid-template-columns: repeat(3, 1fr);
- column-gap: 1em;
- row-gap: 1em;
- padding: 0 3em;
- 
+.skill-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1em;
+  row-gap: 1em;
+  padding: 0 3em;
 }
 
-.card-deck{
-
-  margin:0;
-}
-.skills-h1{
-  width:100%;
- 
+.card-deck {
+  margin: 0;
 }
 
-.focus{
+.skills-h1 {
+  width: 100%;
+}
+
+.focus {
   background-color: transparent;
 }
 
+.card-title {
+  font-size: 2em;
+  font-weight: 700;
+}
 
-  
-  .card-title {
-    font-size: 2em;
-    font-weight: 700;
-  }
-  
-  .image-style {
-    width: 3em;
-  }
-  
-  .font-details {
-    font-size: 3em;
-    font-weight: 500;
-    color:black;
-    
-  }
+.image-style {
+  width: 3em;
+}
 
-  a {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-  }
-  
-  .font-details-b {
-    font-size: 3em;
-    font-weight: 500;
-    color: #ffffff;
-  }
+.font-details {
+  font-size: 3em;
+  font-weight: 500;
+  color: black;
+}
 
-  .skill-title{
-    font-family: 'Josefin Sans', sans-serif;
-  }
-  
+a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+}
+
+.font-details-b {
+  font-size: 3em;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.skill-title {
+  font-family: 'Josefin Sans', sans-serif;
+}
