@@ -8,14 +8,13 @@ import L_STYLED_COMPONENTS from "../../assets/img/skills/styled-components.svg";
 import L_NODE_JS from "../../assets/img/skills/nodejs.svg";
 import L_EXPRESS from "../../assets/img/skills/express.png";
 import L_ANGULAR from "../../assets/img/skills/angular.svg";
-import L_PHASER from "../../assets/img/skills/phaser.png";
+import L_PHASER from "../../assets/img/skills/phaser.webp";
 import L_POSTGRESQL from "../../assets/img/skills/postgresql.svg";
-// import L_FLSTUDIO from "../../assets/img/skills/flstudio.svg";
-// import L_ABLETON from "../../assets/img/skills/ableton.svg";
+
 import L_GIT from "../../assets/img/skills/git-icon.svg";
 import L_HEROKU from "../../assets/img/skills/heroku.svg";
 import L_SURGE from "../../assets/img/skills/surge.svg";
-import L_GITHUB_PAGES from "../../assets/img/skills/github.png";
+import L_GITHUB_PAGES from "../../assets/img/skills/github.webp";
 import L_JAVASCRIPT from "../../assets/img/skills/javascript.svg";
 import L_TYPESCRIPT from "../../assets/img/skills/typescript.svg";
 import L_POSTMAN from "../../assets/img/skills/postman.svg";

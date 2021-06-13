@@ -1,11 +1,10 @@
 import React from "react";
-import "./PortfolioStyles.css";
 import "../../App.css";
-// import { a } from "@merc/react-timeline";
-import PickAFlick from "../../assets/img/website-screenshots/paf-homepage_50.png";
-import TTT from "../../assets/img/website-screenshots/ttt-homepage_50.png";
-import Break from "../../assets/img/website-screenshots/break-hompage_50.png";
-import GITFIND from "../../assets/img/website-screenshots/githufind_50.png";
+
+import PickAFlick from "../../assets/img/website-screenshots/paf-homepage_50.webp";
+import TTT from "../../assets/img/website-screenshots/ttt-homepage_50.webp";
+import Break from "../../assets/img/website-screenshots/break-hompage_50.webp";
+import GITFIND from "../../assets/img/website-screenshots/githufind_50.webp";
 // projects
 import Accordion from "react-bootstrap/Accordion";
 import Card from "react-bootstrap/Card";
@@ -22,25 +21,16 @@ import L_TYPESCRIPT from "../../assets/img/skills/typescript.svg";
 import L_POSTMAN from "../../assets/img/skills/postman.png";
 import L_MDB from "../../assets/img/skills/moviedb.svg";
 import L_JQUERY from "../../assets/img/skills/jquery.png";
-import L_PHASER from "../../assets/img/skills/phaser.png";
+import L_PHASER from "../../assets/img/skills/phaser.webp";
 import L_HEROKU from "../../assets/img/skills/heroku.svg";
-import L_SQL from "../../assets/img/skills/sql.jpg";
+import L_SQL from "../../assets/img/skills/sql.svg";
 import L_REACT from "../../assets/img/skills/react.svg";
 
 const Portfolio = () => {
   return (
     <div id="portfolio">
       <div className="port-h1">
-        <h1
-          style={{
-            fontFamily: `'Josefin Sans', sans-serif`,
-            marginTop: "40px",
-            fontSize: "2.5rem",
-            color: "black",
-            width: "100%",
-            marginBottom: "2em",
-          }}
-        >
+        <h1>
           PORTFOLIO
           <div
             data-aos="fade-right"

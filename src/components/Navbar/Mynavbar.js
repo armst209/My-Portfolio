@@ -2,8 +2,7 @@ import React, { useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Logo from "../../assets/icons/kurlogo-01_low.webp";
-import hamburger from "../../assets/icons/3lines_icon_closed_small.png";
-import "./NavbarStyles.css";
+import "../../App.css";
 
 // NAVIGATION HOVER HOOKS
 const Mynavbar = () => {
@@ -14,6 +13,7 @@ const Mynavbar = () => {
   const [aboutIcon, setAboutIcon] = useState(
     <i className="far fa-address-card"></i>
   );
+
   const [skillsIcon, setSkillsIcon] = useState(
     <i className="lni lni-certificate"></i>
   );
@@ -58,43 +58,6 @@ const Mynavbar = () => {
 
   window.addEventListener("scroll", changeNavBg);
 
-  let closeMobileNavOnTouch = () => {
-    let mobileNav = document.querySelector(".mobile-navigation");
-    // mobileNav.classList.add(".mobile-nav-close");
-    mobileNav.style.display = "none";
-  };
-
-  window.addEventListener("touchstart", closeMobileNavOnTouch);
-
-  // NAVIGATION HAMBURGER TOGGLE
-  let mobileNavActive = true;
-
-  let toggleNav = () => {
-    let getMobileNavigation = document.querySelector(".mobile-navigation");
-    let getMobileNavigationUL = document.querySelector(".mobile-navigation ul");
-    if (mobileNavActive === false) {
-      getMobileNavigation.style.width = "1px";
-      getMobileNavigation.style.left = "99.5%";
-      getMobileNavigationUL.style.visibility = "hidden";
-
-      mobileNavActive = false;
-    } else if (mobileNavActive === true) {
-      getMobileNavigation.style.left = "80%";
-      getMobileNavigation.style.width = "20%";
-      getMobileNavigationUL.style.width = "auto";
-      getMobileNavigationUL.style.visibility = "visible";
-      mobileNavActive = true;
-    }
-  };
-
-  let closeMobileNav = () => {
-    let closeMobileNav = document.querySelector(".mobile-navigation");
-    let closeMobileNavUL = document.querySelector(".mobile-navigation ul");
-    closeMobileNav.style.width = "1px";
-    closeMobileNav.style.left = "99.5%";
-    closeMobileNavUL.style.visibility = "hidden";
-  };
-
   return (
     <Navbar
       id="navbar"
@@ -111,12 +74,49 @@ const Mynavbar = () => {
       <Navbar.Brand href="https://ala-armstrong.com">
         <img className="logo" src={Logo} alt="logo" />
       </Navbar.Brand>
-      <div
-        className="navbar-ham-icon"
-        aria-controls="responsive-navbar-nav"
-        onClick={() => toggleNav()}
-      >
-        <img src={hamburger} alt="hamburger" />
+
+      <div className="mobile-nav-div" aria-controls="responsive-navbar-nav">
+        <label htmlFor="check">
+          <input type="checkbox" id="check" className="navbar-ham-icon" />
+          <span></span>
+          <span></span>
+          <span></span>
+          {/* Mobile Navbar */}
+          <aside className="mobile-navigation">
+            <ul>
+              <li>
+                <a href="#home">
+                  <i className="lni lni-home"></i>
+                  <div>Home</div>
+                </a>
+              </li>
+              <li>
+                <a href="#about">
+                  <i className="far fa-address-card"></i>
+                  <div>About</div>
+                </a>
+              </li>
+              <li>
+                <a href="#skills">
+                  <i className="lni lni-certificate"></i>
+                  <div>Skills</div>
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio">
+                  <i className="lni lni-briefcase"></i>
+                  <div>Portfolio</div>
+                </a>
+              </li>
+              <li>
+                <a href="#contact">
+                  <i className="far fa-address-book"></i>
+                  <div>Contact</div>
+                </a>
+              </li>
+            </ul>
+          </aside>
+        </label>
       </div>
 
       <Navbar.Collapse id="responsive-navbar-nav">
@@ -128,7 +128,6 @@ const Mynavbar = () => {
             href="#home"
           >
             {homeIcon}
-            {/* <div className="mobile-nav-text">Home</div> */}
           </Nav.Link>
 
           <Nav.Link
@@ -150,7 +149,6 @@ const Mynavbar = () => {
             href="#skills"
           >
             {skillsIcon}
-            {/* <div className="mobile-nav-text">Skills</div> */}
           </Nav.Link>
           <Nav.Link
             className="hover"
@@ -174,46 +172,6 @@ const Mynavbar = () => {
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>
-      {/* Mobile Navbar */}
-      <aside className="mobile-navigation">
-        <ul>
-          <li className="x-button" onClick={() => closeMobileNav()}>
-            <p>
-              X<div>Close</div>
-            </p>
-          </li>
-          <li>
-            <a href="#home">
-              <i className="lni lni-home"></i>
-              <div>Home</div>
-            </a>
-          </li>
-          <li>
-            <a href="#about">
-              <i className="far fa-address-card"></i>
-              <div>About</div>
-            </a>
-          </li>
-          <li>
-            <a href="#skills">
-              <i className="lni lni-certificate"></i>
-              <div>Skills</div>
-            </a>
-          </li>
-          <li>
-            <a href="#portfolio">
-              <i className="lni lni-briefcase"></i>
-              <div>Portfolio</div>
-            </a>
-          </li>
-          <li>
-            <a href="#contact">
-              <i className="far fa-address-book"></i>
-              <div>Contact</div>
-            </a>
-          </li>
-        </ul>
-      </aside>
     </Navbar>
   );
 };

@@ -1,36 +1,14 @@
 import React from "react";
-import "./ContactStyles.css";
-import "../About/AboutStyles.css";
-import "../../components/Carousel/CarouselStyles.css";
+import "../../App.css";
+
 import Button from "react-bootstrap/Button";
 import Copyright from "../../components/Copyright/Copyright";
-import "../../wickedcss.min.css";
-import bgImage from "../../assets/img/background/contact_low.webp";
 
 const Contact = () => {
   return (
-    <div
-      id="contact"
-      style={{
-        backgroundBlendMode: "multiply",
-        backgroundRepeat: "repeat",
-        backgroundPosition: "center center",
-        backgroundImage: `url(${bgImage}),  radial-gradient(#444, #111)`,
-        borderTop: "4px solid black",
-        objectFit: "fill",
-      }}
-    >
+    <div id="contact">
       <div className="contact-h1">
-        <h1
-          className=""
-          style={{
-            fontFamily: `'Josefin Sans', sans-serif`,
-            marginTop: "40px",
-            fontSize: "2.5rem",
-            color: "white",
-            marginBottom: "1em",
-          }}
-        >
+        <h1>
           CONTACT
           <div
             data-aos="fade-right"
@@ -55,7 +33,7 @@ const Contact = () => {
               <div className="contact-button">
                 <div className="contact-button-text">
                   <div>
-                    Email Me
+                    <div>Email Me</div>
                     <div>
                       <i
                         className="fas fa-envelope-square"
@@ -79,7 +57,8 @@ const Contact = () => {
               <div className="contact-button">
                 <div className="contact-button-text">
                   <div>
-                    LinkedIn
+                    <div>LinkedIn</div>
+
                     <div>
                       <i
                         className="fab fa-linkedin"
@@ -103,7 +82,7 @@ const Contact = () => {
               <div className="contact-button">
                 <div className="contact-button-text">
                   <div>
-                    Github
+                    <div> Github</div>
                     <div>
                       <i
                         className="fab fa-github"

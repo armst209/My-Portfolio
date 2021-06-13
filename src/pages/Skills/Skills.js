@@ -1,34 +1,16 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Image from "react-bootstrap/Image";
-import "./SkillsStyles.css";
-import bgImage from "../../assets/img/background/keyboard_low.webp";
+import "../../App.css";
 
 // skills
 import { skills } from "./skills-data";
 
 const Skills = () => {
   return (
-    <div
-      id="skills"
-      style={{
-        backgroundBlendMode: "multiply",
-        backgroundPosition: "center center",
-        backgroundImage: `url(${bgImage}),  radial-gradient(#444, #111)`,
-      }}
-    >
+    <div id="skills">
       <div className="skill-h1">
-        <h1
-          className=""
-          style={{
-            fontFamily: `'Josefin Sans', sans-serif`,
-            marginTop: "40px",
-            fontSize: "2.5rem",
-            color: "white",
-            width: "100%",
-            marginBottom: "2em",
-          }}
-        >
+        <h1>
           SKILLS
           <div
             data-aos="fade-right"
@@ -247,34 +229,7 @@ const Skills = () => {
           </Card.Body>
         </Card>
 
-        <Card className="focus">
-          {/* <Card.Body>
-            <Card.Title className="text-center  card-title skill-title">
-              DAWs
-            </Card.Title>
-            <hr />
-            <Card.Text className="card-text d-flex justify-content-start flex-column">
-              {skills.daws.map((skill, index) => (
-                <span className="p-2" key={index}>
-                  <a
-                    className="text-decoration-none"
-                    href={skill.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <Image
-                      src={skill.imgSrc}
-                      alt={skill.imgAltText}
-                      rounded
-                      className="image-style m-1"
-                    ></Image>{" "}
-                    {skill.skillName}
-                  </a>
-                </span>
-              ))}
-            </Card.Text>
-          </Card.Body> */}
-        </Card>
+        <Card className="focus"></Card>
       </div>
     </div>
   );

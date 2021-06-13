@@ -1,10 +1,8 @@
 import React from "react";
-import "./CarouselStyles.css";
-import CaroImage1 from "../../assets/img/profile/aa_headshot_2_low_50_1_50.jpg";
-// import CaroImage2 from "../../assets/img/profile/aa_headshot_3_low.webp";
+import "../../App.css";
+import CaroImage1 from "../../assets/img/profile/profile_blended_aaron.png";
 import Title from "../Title/Title";
 import Scrolldown from "../Scrolldown/Scrolldown";
-
 import { Fragment } from "react";
 
 const Mycarousel = () => {

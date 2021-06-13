@@ -1,24 +1,14 @@
 import React from "react";
-import "./AboutStyles.css";
-import Profile from "../../assets/img/profile/aa_headshot_circle_2_50_1_50.png";
-import "../../wickedcss.min.css";
+
+import "../../App.css";
+import Profile from "../../assets/img/profile/aa_headshot_circle_2_50_1_50.webp";
 import Button from "react-bootstrap/Button";
-import "../About/AboutStyles.css";
 
 const About = () => {
   return (
     <div id="about">
       <div className="about-h1">
-        <h1
-          style={{
-            fontFamily: `'Josefin Sans', sans-serif`,
-            marginTop: "40px",
-            fontSize: "2.5rem",
-            color: "black",
-            width: "100%",
-            marginBottom: "2em",
-          }}
-        >
+        <h1>
           ABOUT ME
           <div data-aos="fade-right" className="line-1"></div>
           <div data-aos="fade-left" className="line-2"></div>
@@ -32,12 +22,7 @@ const About = () => {
           </div>
         </div>
         <div className="para-links">
-          <h4
-            className="about-h4"
-            style={{
-              fontFamily: `'Josefin Sans', sans-serif`,
-            }}
-          >
+          <h4 className="about-h4">
             Hi there! I'm <strong>AARON ARMSTRONG.</strong>
           </h4>
           <div className="para">
